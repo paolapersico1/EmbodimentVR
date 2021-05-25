@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 2413062372038570801}
   - component: {fileID: 8847030543091582743}
   - component: {fileID: 27052130707722499}
+  - component: {fileID: -4614181548013077348}
   m_Layer: 0
   m_Name: Avatar Variant
   m_TagString: Untagged
@@ -112,7 +113,7 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 270564362872737369, guid: c4157f5d5cbf4ae4fa1aaa1c5f49d1d2, type: 3}
     rigTarget: {fileID: 8916139646356417602}
-    trackingPositionOffset: {x: 0, y: 0, z: -1.5}
+    trackingPositionOffset: {x: 0, y: 0, z: -1}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 1014782899489865465, guid: 1737675b652c9554ea0b4196ddb1f23b, type: 3}
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497628792132289495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 329611cbf788bc1468456cfe6fa787d1, type: 3}
   m_Name: 
@@ -274,10 +275,29 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 6439813010202443365}
+  - {fileID: 2398950833943666240}
+  - {fileID: 3401367061277675870}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-4614181548013077348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497628792132289495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &537327201180117357
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8916139646356417602}
   - component: {fileID: 4422733915967445624}
-  - component: {fileID: 7726467761399859332}
+  - component: {fileID: 6439813010202443365}
   m_Layer: 0
   m_Name: Head Constraint
   m_TagString: Untagged
@@ -493,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814660913636327395}
   m_LocalRotation: {x: 0.000000031494938, y: -4.0643044e-12, z: -9.085619e-13, w: 1}
-  m_LocalPosition: {x: -0.0000028291847, y: 1.5304005, z: -0.008244537}
+  m_LocalPosition: {x: -0.0000028291865, y: 1.7436346, z: 0.0217122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5894800514927416082}
@@ -552,7 +572,7 @@ MonoBehaviour:
     m_MaintainRotationOffset: 0
   m_SourceObjectsGUIToggle: 1
   m_SettingsGUIToggle: 0
---- !u!114 &7726467761399859332
+--- !u!114 &6439813010202443365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1163,7 +1183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4367085364267671833}
-  - component: {fileID: 6103966652720724886}
+  - component: {fileID: 2398950833943666240}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -1185,7 +1205,7 @@ Transform:
   m_Father: {fileID: 9022785188978475375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6103966652720724886
+--- !u!114 &2398950833943666240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1426,7 +1446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8195856114166839844}
-  - component: {fileID: 2822210765566473588}
+  - component: {fileID: 3401367061277675870}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -1448,7 +1468,7 @@ Transform:
   m_Father: {fileID: 4265649098350769550}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2822210765566473588
+--- !u!114 &3401367061277675870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

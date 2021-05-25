@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [System.Serializable]
 public class VRMap
@@ -11,9 +12,9 @@ public class VRMap
     public Vector3 trackingPositionOffset;
     public Vector3 trackingRotationOffset;
 
-    public void Map(GameObject vrObj)
+    public void Map(Transform vrTransform)
     {
-        vrTarget = vrObj.transform;
+        vrTarget = vrTransform;
         rigTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
         rigTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
     }
@@ -26,9 +27,9 @@ public class VRRig : MonoBehaviour
     public VRMap leftHand;
     public VRMap rightHand;
 
-    private GameObject vrHead;
-    private GameObject vrLeftHand;
-    private GameObject vrRightHand;
+    private Transform vrHead;
+    private Transform vrLeftHand;
+    private Transform vrRightHand;
 
     public Vector3 headBodyOffset;
     private PhotonView photonView;
@@ -36,13 +37,14 @@ public class VRRig : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        vrHead = GameObject.Find("Main Camera");
-        vrLeftHand = GameObject.Find("LeftHand Controller");
-        vrRightHand = GameObject.Find("RightHand Controller");
-        headBodyOffset = transform.position - vrHead.transform.position;
-
         photonView = GetComponent<PhotonView>();
 
+        XRRig rig = FindObjectOfType<XRRig>();
+        vrHead = rig.transform.Find("Camera Offset/Main Camera");
+        vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller");
+        vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
+
+        headBodyOffset = transform.position - vrHead.transform.position;
     }
 
     // Update is called once per frame
@@ -50,10 +52,6 @@ public class VRRig : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            rightHand.rigTarget.gameObject.SetActive(false);
-            leftHand.rigTarget.gameObject.SetActive(false);
-            head.rigTarget.gameObject.SetActive(false);
-
             transform.position = vrHead.transform.position + headBodyOffset;
             transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(vrHead.transform.up, Vector3.up).normalized,
                                             Time.deltaTime * turnSmoothness);
