@@ -31,6 +31,7 @@ public class VRRig : MonoBehaviour
     private Transform vrLeftHand;
     private Transform vrRightHand;
 
+    public Transform headConstraint;
     public Vector3 headBodyOffset;
     private PhotonView photonView;
 
@@ -44,7 +45,7 @@ public class VRRig : MonoBehaviour
         vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller");
         vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
 
-        headBodyOffset = transform.position - vrHead.transform.position;
+        headBodyOffset = transform.position - headConstraint.position;
     }
 
     // Update is called once per frame
@@ -52,8 +53,9 @@ public class VRRig : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            transform.position = vrHead.transform.position + headBodyOffset;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized,
+            transform.position = headConstraint.position + headBodyOffset;
+            //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized,
                                             Time.deltaTime * turnSmoothness);
 
             head.Map(vrHead);
