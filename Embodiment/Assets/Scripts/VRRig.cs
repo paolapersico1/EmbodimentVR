@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+using Photon.Pun;
 
 [System.Serializable]
 public class VRMap
@@ -31,6 +31,7 @@ public class VRRig : MonoBehaviour
     private GameObject vrRightHand;
 
     public Vector3 headBodyOffset;
+    private PhotonView photonView;
 
     // Start is called before the first frame update
     void Start()
@@ -40,18 +41,26 @@ public class VRRig : MonoBehaviour
         vrRightHand = GameObject.Find("RightHand Controller");
         headBodyOffset = transform.position - vrHead.transform.position;
 
+        photonView = GetComponent<PhotonView>();
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = vrHead.transform.position + headBodyOffset;
-        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(vrHead.transform.up, Vector3.up).normalized, 
-                                        Time.deltaTime * turnSmoothness);
+        if (photonView.IsMine)
+        {
+            rightHand.rigTarget.gameObject.SetActive(false);
+            leftHand.rigTarget.gameObject.SetActive(false);
+            head.rigTarget.gameObject.SetActive(false);
 
-        head.Map(vrHead);
-        leftHand.Map(vrLeftHand);
-        rightHand.Map(vrRightHand);
+            transform.position = vrHead.transform.position + headBodyOffset;
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(vrHead.transform.up, Vector3.up).normalized,
+                                            Time.deltaTime * turnSmoothness);
 
+            head.Map(vrHead);
+            leftHand.Map(vrLeftHand);
+            rightHand.Map(vrRightHand);
+        }
     }
 }
