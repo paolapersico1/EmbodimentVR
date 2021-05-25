@@ -54,9 +54,9 @@ public class VRRig : MonoBehaviour
         if (photonView.IsMine)
         {
             transform.position = headConstraint.position + headBodyOffset;
-            //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized,
-                                            Time.deltaTime * turnSmoothness);
+            transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
+            /*transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized,
+                                            Time.deltaTime * turnSmoothness);*/
 
             head.Map(vrHead);
             leftHand.Map(vrLeftHand);
