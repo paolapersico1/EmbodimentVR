@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 8847030543091582743}
   - component: {fileID: 27052130707722499}
   - component: {fileID: -4614181548013077348}
+  - component: {fileID: -3774367654703377405}
   m_Layer: 0
   m_Name: Avatar Variant
   m_TagString: Untagged
@@ -250,13 +251,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497628792132289495}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 329611cbf788bc1468456cfe6fa787d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedThreshold: 0.1
-  smoothing: 0.39
+  smoothing: 0.255
 --- !u!114 &27052130707722499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +277,8 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: -4614181548013077348}
+  - {fileID: -3774367654703377405}
   - {fileID: 6439813010202443365}
   - {fileID: 2398950833943666240}
   - {fileID: 3401367061277675870}
@@ -298,6 +301,33 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &-3774367654703377405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497628792132289495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 2
+    Name: isMoving
+  - Type: 1
+    SynchronizeType: 2
+    Name: DirectionX
+  - Type: 1
+    SynchronizeType: 2
+    Name: DirectionY
+  m_SynchronizeLayers:
+  - SynchronizeType: 2
+    LayerIndex: 0
 --- !u!1 &537327201180117357
 GameObject:
   m_ObjectHideFlags: 0
