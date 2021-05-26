@@ -12,19 +12,10 @@ public enum AvatarType
     Woman
 }
 
-[System.Serializable]
-public class AvatarTransform
-{
-    public Vector3 position;
-    public Vector3 rotation;
-}
-
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
     private GameObject spawnedPlayerPrefab;
     public AvatarType avatarType = AvatarType.None;
-    public AvatarTransform manTransform;
-    public AvatarTransform womanTransform;
 
     public void SetAvatarType(string type)
     {
@@ -61,9 +52,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         base.OnJoinedRoom();
         if (avatarType != AvatarType.None)
         {
-            AvatarTransform transform = (avatarType == AvatarType.Man) ? manTransform : womanTransform;
-            spawnedPlayerPrefab = PhotonNetwork.Instantiate(avatarType.ToString(), 
-                                                            transform.position, Quaternion.Euler(transform.rotation));
+            spawnedPlayerPrefab = PhotonNetwork.Instantiate(avatarType.ToString(), transform.position, transform.rotation);
         }
         else
         {
