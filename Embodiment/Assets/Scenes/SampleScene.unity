@@ -378,7 +378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.09}
+  m_AnchoredPosition: {x: 0, y: 0.552}
   m_SizeDelta: {x: 500, y: 289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286600628
@@ -1302,6 +1302,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatarType: 0
+  manTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+  womanTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1093469984
 Transform:
   m_ObjectHideFlags: 0
@@ -1328,7 +1334,6 @@ GameObject:
   - component: {fileID: 1140496879}
   - component: {fileID: 1140496878}
   - component: {fileID: 1140496877}
-  - component: {fileID: 1140496881}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1447,31 +1452,6 @@ Transform:
   m_Father: {fileID: 1280905856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1140496881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140496876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b53d0bd85244f34d8829cc7f8d5de24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticle: {fileID: 0}
-  inactiveReticleColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  activeReticleColor:
-    r: 0
-    g: 1
-    b: 0
-    a: 1
-  currentGazeObject: {fileID: 0}
-  currentSelectedObject: {fileID: 0}
 --- !u!1 &1280905855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280905855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.654, z: 0.147}
+  m_LocalPosition: {x: 0, y: 1.654, z: 0.147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1140496880}
@@ -1651,7 +1631,7 @@ GameObject:
   - component: {fileID: 1408406313}
   - component: {fileID: 1408406312}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

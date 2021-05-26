@@ -45,8 +45,6 @@ public class VRRig : MonoBehaviour
         vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller");
         vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
 
-        Debug.Log(transform.position);
-        Debug.Log(headConstraint.position);
         headBodyOffset = transform.position - headConstraint.position;
     }
 
@@ -56,9 +54,11 @@ public class VRRig : MonoBehaviour
         if (photonView.IsMine)
         {
             transform.position = headConstraint.position + headBodyOffset;
+            Debug.Log(headConstraint.position);
+            Debug.Log(headBodyOffset);
             //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized,
-                                            Time.deltaTime * turnSmoothness);
+            /*transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized,
+                                            Time.deltaTime * turnSmoothness);*/
 
             head.Map(vrHead);
             leftHand.Map(vrLeftHand);
