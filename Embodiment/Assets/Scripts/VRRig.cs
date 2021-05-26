@@ -45,6 +45,8 @@ public class VRRig : MonoBehaviour
         vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller");
         vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
 
+        Debug.Log(transform.position);
+        Debug.Log(headConstraint.position);
         headBodyOffset = transform.position - headConstraint.position;
     }
 

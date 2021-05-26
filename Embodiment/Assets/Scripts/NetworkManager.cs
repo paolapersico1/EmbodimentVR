@@ -4,15 +4,31 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
+[System.Serializable]
+public enum AvatarType
+{
+    None,
+    Man,
+    Woman
+}
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject spawnedPlayerPrefab;
+    public AvatarType avatarType = AvatarType.None;
+
+    public void SetAvatarType(string type)
     {
-        ConnectToServer();
+        try
+        {
+            avatarType = (AvatarType)System.Enum.Parse(typeof(AvatarType), type);
+        }
+        catch (System.Exception)
+        {
+            Debug.LogErrorFormat("Parse: Can't convert {0} to enum, please check the spell.", type);
+        }
     }
 
-    void ConnectToServer()
+    public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Try connect to server...");
@@ -33,6 +49,21 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined a Room");
         base.OnJoinedRoom();
+        if (avatarType != AvatarType.None)
+        {
+            spawnedPlayerPrefab = PhotonNetwork.Instantiate(avatarType.ToString(), transform.position, transform.rotation);
+        }
+        else
+        {
+            Debug.Log("Error: Avatar Type is None");
+        }
+    }
+
+    public override void OnLeftRoom()
+    {
+        base.OnLeftRoom();
+        PhotonNetwork.Destroy(spawnedPlayerPrefab);
+        avatarType = AvatarType.None;
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
