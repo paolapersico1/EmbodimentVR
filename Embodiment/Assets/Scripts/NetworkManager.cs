@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [System.Serializable]
 public enum AvatarType
@@ -52,7 +53,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         base.OnJoinedRoom();
         if (avatarType != AvatarType.None)
         {
+            //GameObject camOffset = GameObject.Find("XR Rig/Camera Offset");
+            //camOffset.transform.position = new Vector3(0, 1, 0);
             spawnedPlayerPrefab = PhotonNetwork.Instantiate(avatarType.ToString(), transform.position, transform.rotation);
+
         }
         else
         {
