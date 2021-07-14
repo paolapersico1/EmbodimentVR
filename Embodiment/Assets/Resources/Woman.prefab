@@ -3088,7 +3088,7 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 270564362872737369, guid: c4157f5d5cbf4ae4fa1aaa1c5f49d1d2, type: 3}
     rigTarget: {fileID: 7586667280660700959}
-    trackingPositionOffset: {x: 0, y: -10, z: -14.5}
+    trackingPositionOffset: {x: 0, y: -130, z: -150}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 1014782899489865465, guid: 1737675b652c9554ea0b4196ddb1f23b, type: 3}
@@ -3303,6 +3303,10 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
+  - SynchronizeType: 0
+    LayerIndex: 1
+  - SynchronizeType: 0
+    LayerIndex: 2
 --- !u!1 &7586667281989418386
 GameObject:
   m_ObjectHideFlags: 0
