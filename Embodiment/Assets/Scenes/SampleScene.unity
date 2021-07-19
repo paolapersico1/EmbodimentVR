@@ -1066,7 +1066,7 @@ Transform:
   m_Children:
   - {fileID: 1280905856}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &586206243
 PrefabInstance:
@@ -2412,50 +2412,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 20de8f2fcb657416fbd17964908b4d6a, type: 3}
   m_PrefabInstance: {fileID: 1057081274}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1093469981
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1093469984}
-  - component: {fileID: 1093469983}
-  m_Layer: 0
-  m_Name: Network Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1093469983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093469981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 866b33bf9f8e0984a84345e38b5aa6a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  avatarType: 0
---- !u!4 &1093469984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093469981}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140496876
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,7 +3352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1820980324
 PrefabInstance:
@@ -3743,7 +3699,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2088334123}
         m_TargetAssemblyTypeName: PlaneHeight, Assembly-CSharp
         m_MethodName: CalibrateHeight
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4094,7 +4050,7 @@ Transform:
   - {fileID: 453752624}
   - {fileID: 1300501154}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2088334123
 MonoBehaviour:
@@ -6124,5 +6080,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0031677475
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7586667281983611020, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}
+    - {fileID: 7586667281983611023, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}
+    - {fileID: 7586667281983611022, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}
+    - {fileID: 7586667280226945786, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}
+    - {fileID: 7586667281668421938, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b83fbd81e4f81844587bbf85e0f8f5cd, type: 3}

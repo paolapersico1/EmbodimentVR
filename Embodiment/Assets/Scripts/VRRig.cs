@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [System.Serializable]
@@ -33,12 +32,10 @@ public class VRRig : MonoBehaviour
 
     public Transform headConstraint;
     public Vector3 headBodyOffset;
-    private PhotonView photonView;
 
     // Start is called before the first frame update
     void Start()
     {
-        photonView = GetComponent<PhotonView>();
 
         XRRig rig = FindObjectOfType<XRRig>();
         vrHead = rig.transform.Find("Camera Offset/Main Camera");
@@ -51,16 +48,13 @@ public class VRRig : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (photonView.IsMine)
-        {
-            transform.position = headConstraint.position + headBodyOffset;
-            //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized,
-                                            Time.deltaTime * turnSmoothness); 
+        transform.position = headConstraint.position + headBodyOffset;
+        //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
+        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized,
+                                        Time.deltaTime * turnSmoothness); 
 
-            head.Map(vrHead);
-            leftHand.Map(vrLeftHand);
-            rightHand.Map(vrRightHand);
-        }
+        head.Map(vrHead);
+        leftHand.Map(vrLeftHand);
+        rightHand.Map(vrRightHand);
     }
 }
