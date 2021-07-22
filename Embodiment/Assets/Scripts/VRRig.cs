@@ -50,8 +50,12 @@ public class VRRig : MonoBehaviour
     {
         transform.position = headConstraint.position + headBodyOffset;
         //transform.forward = Vector3.ProjectOnPlane(head.rigTarget.transform.up, Vector3.up).normalized;
-        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized,
-                                        Time.deltaTime * turnSmoothness); 
+        if (Quaternion.Angle(Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0),
+                Quaternion.Euler(0, headConstraint.rotation.eulerAngles.y, 0)) > 90)
+        {
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized,
+                                        Time.deltaTime * turnSmoothness);
+        }
 
         head.Map(vrHead);
         leftHand.Map(vrLeftHand);
