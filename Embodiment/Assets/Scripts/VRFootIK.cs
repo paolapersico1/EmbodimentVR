@@ -23,15 +23,20 @@ public class VRFootIK : MonoBehaviour
 
     private void OnAnimatorIK(int layerIndex)
     {
+        //AvatarIKGoal -> target position and rotation for a specific body part 
         Vector3 rightFootPos = animator.GetIKPosition(AvatarIKGoal.RightFoot);
-        RaycastHit hit;
+        RaycastHit hit; //the point where the ray hits the ground
 
+        //if the right foot hits the ground (i.e. the ray from 1 meter above the foot going down intersects with a collider)
         bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit);
         if (hasHit)
         {
+            //SetIKPositionWeight->sets the weight of an IK goal(0 = at the original animation before IK, 1 = at the goal).
             animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, rightFootPosWeight);
             animator.SetIKPosition(AvatarIKGoal.RightFoot, hit.point + footOffset);
 
+            //make the foot lie flat on the ground
+            //LookRotation -> Creates a rotation with the specified forward and upwards directions
             Quaternion footRotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(transform.forward, hit.normal), hit.normal);
             animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, rightFootRotWeight);
             animator.SetIKRotation(AvatarIKGoal.RightFoot, footRotation);
@@ -41,6 +46,7 @@ public class VRFootIK : MonoBehaviour
             animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, 0);
         }
 
+        //the same for the left foot
         Vector3 leftFootPos = animator.GetIKPosition(AvatarIKGoal.LeftFoot);
 
         hasHit = Physics.Raycast(leftFootPos + Vector3.up, Vector3.down, out hit);
