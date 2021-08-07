@@ -15,11 +15,11 @@ C:/Users/paola/Desktop/EmbodimentVR/Embodiment
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57124
+59151
 Successfully changed project path to: C:/Users/paola/Desktop/EmbodimentVR/Embodiment
 C:/Users/paola/Desktop/EmbodimentVR/Embodiment
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 92.29 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 98.82 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1482 +35,1431 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002819 seconds.
+Registered in 0.002923 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.92 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 84.49 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.523 seconds
+- Completed reload, in  1.662 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008985 seconds.
+Registered in 0.008956 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.06 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 75.87 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.272 seconds
+- Completed reload, in  1.993 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 9 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2429 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 120.3 MB.
-System memory in use after: 120.3 MB.
+System memory in use before: 192.2 MB.
+System memory in use after: 192.2 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2881.
-Total: 4.061200 ms (FindLiveObjects: 0.419100 ms CreateObjectMapping: 0.163000 ms MarkObjects: 3.359400 ms  DeleteObjects: 0.117200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Agents/male4
-  artifactKey: Guid(24914259ec9c3f44fb6b468444baf726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male4 using Guid(24914259ec9c3f44fb6b468444baf726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ab64d761f87cf39936ef51e5d08f12') in 0.009003 seconds
-  Import took 0.015235 seconds .
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2883.
+Total: 2.601300 ms (FindLiveObjects: 0.257700 ms CreateObjectMapping: 0.062800 ms MarkObjects: 2.182800 ms  DeleteObjects: 0.096900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000512 seconds.
-  path: Assets/Agents/male4/male4.fbx
-  artifactKey: Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male4/male4.fbx using Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d77d015676b3c741a34f11ee748877') in 0.554263 seconds
-  Import took 0.562828 seconds .
+  path: Assets/Agents/woman4/woman4.fbx
+  artifactKey: Guid(880b3a4352aa144549b2dcd3f587844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman4/woman4.fbx using Guid(880b3a4352aa144549b2dcd3f587844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6066abb18eaa0824be3932958e091f') in 0.397869 seconds
+  Import took 0.403886 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.134557 seconds.
-  path: Assets/Agents/male4/male4.fbx
-  artifactKey: Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male4/male4.fbx using Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b46e56ec64830405cfee4175458b054') in 0.312102 seconds
-  Import took 0.320417 seconds .
+  Time since last request: 173.534022 seconds.
+  path: Assets/Animations/AnimatorController.controller
+  artifactKey: Guid(7dfdef690b6ceab4bb6499cdacc98bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AnimatorController.controller using Guid(7dfdef690b6ceab4bb6499cdacc98bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0138710f08ea52993756cfb384a51c') in 0.017398 seconds
+  Import took 0.024080 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.835457 seconds.
-  path: Assets/Agents/male4/male4.fbx
-  artifactKey: Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male4/male4.fbx using Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba401004765514304182410a85c6e02') in 0.279175 seconds
-  Import took 0.289839 seconds .
+  Time since last request: 0.043006 seconds.
+  path: Assets/Animations/AnimatorController.controller
+  artifactKey: Guid(7dfdef690b6ceab4bb6499cdacc98bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AnimatorController.controller using Guid(7dfdef690b6ceab4bb6499cdacc98bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0138710f08ea52993756cfb384a51c') in 0.011610 seconds
+  Import took 0.017421 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.559400 seconds.
-  path: Assets/Agents/male4/male4.fbx
-  artifactKey: Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male4/male4.fbx using Guid(7a60a97972032cc408014d56bd6a6c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab465858bde0baed1d10d924dd09dab4') in 0.283661 seconds
-  Import took 0.292777 seconds .
+  Time since last request: 73.295071 seconds.
+  path: Assets/Animations/Head Mask.mask
+  artifactKey: Guid(7d4ba38c181649c41a2d9077fdc8ce74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Head Mask.mask using Guid(7d4ba38c181649c41a2d9077fdc8ce74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cd34f1cce17a080ae1f771bc647075') in 0.005479 seconds
+  Import took 0.010776 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.646968 seconds.
-  path: Assets/Agents/male5
-  artifactKey: Guid(f6553763310807e4eb3148e5074b15f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5 using Guid(f6553763310807e4eb3148e5074b15f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54c56637991f71dca47ed6dd5865da2') in 0.004119 seconds
-  Import took 0.010636 seconds .
+  Time since last request: 0.017544 seconds.
+  path: Assets/Animations/Head Mask.mask
+  artifactKey: Guid(7d4ba38c181649c41a2d9077fdc8ce74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Head Mask.mask using Guid(7d4ba38c181649c41a2d9077fdc8ce74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cd34f1cce17a080ae1f771bc647075') in 0.003266 seconds
+  Import took 0.008761 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.093917 seconds.
-  path: Assets/Agents/male5/male5.fbx
-  artifactKey: Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/male5.fbx using Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2460d5f76e34b332b201db8239dc9f7c') in 0.202766 seconds
-  Import took 0.220654 seconds .
+  Time since last request: 46.929989 seconds.
+  path: Assets/Animations/Lower Body Mask.mask
+  artifactKey: Guid(e62a5f39596641148be7ab3e903a0e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Lower Body Mask.mask using Guid(e62a5f39596641148be7ab3e903a0e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de665361d203b329f0843329aab8ebf') in 0.003956 seconds
+  Import took 0.009751 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.460462 seconds.
-  path: Assets/Agents/male5/male5.fbx
-  artifactKey: Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/male5.fbx using Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9200dcd3b442ffacdc10b345ff744537') in 0.245689 seconds
-  Import took 0.262500 seconds .
+  Time since last request: 18.313111 seconds.
+  path: Assets/Animations/Facial animations/woman2 (1).controller
+  artifactKey: Guid(a1f49c0d63e1c3f4793016fc04927815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman2 (1).controller using Guid(a1f49c0d63e1c3f4793016fc04927815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c052d372f759c37e73cba9e90eeeb18') in 0.029885 seconds
+  Import took 0.036544 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.763736 seconds.
-  path: Assets/Agents/male5/male5.fbx
-  artifactKey: Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/male5.fbx using Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec88ebf63077ea8b6870b43e2de0c3da') in 0.247592 seconds
-  Import took 0.255768 seconds .
+  Time since last request: 0.029159 seconds.
+  path: Assets/Animations/Facial animations/woman2 (1).controller
+  artifactKey: Guid(a1f49c0d63e1c3f4793016fc04927815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman2 (1).controller using Guid(a1f49c0d63e1c3f4793016fc04927815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c052d372f759c37e73cba9e90eeeb18') in 0.018404 seconds
+  Import took 0.024035 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.643182 seconds.
-  path: Assets/Agents/male5/male5.fbx
-  artifactKey: Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/male5.fbx using Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128eb13516d0a08c20d78b5f8d7401ae') in 0.254802 seconds
-  Import took 0.265060 seconds .
+  Time since last request: 12.919375 seconds.
+  path: Assets/Animations/Facial animations/talk12.anim
+  artifactKey: Guid(8199cdd2775c18e468426016d95b87fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/talk12.anim using Guid(8199cdd2775c18e468426016d95b87fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c226bbc88a6c17401d3b9c12ff6c51df') in 0.028718 seconds
+  Import took 0.034885 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 64.762177 seconds.
-  path: Assets/Agents/male5/male5.fbx
-  artifactKey: Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/male5.fbx using Guid(3398fa7a934aab8429ba781aa64dfd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca99f1116f16b7136c7e35426a98185b') in 0.204902 seconds
-  Import took 0.216557 seconds .
+  Time since last request: 40.581602 seconds.
+  path: Assets/Animations/Facial animations/male5.controller
+  artifactKey: Guid(c34c8bfd7ed9419418ec3b7896688029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male5.controller using Guid(c34c8bfd7ed9419418ec3b7896688029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c91647c4f251cdaeacaab0f6f710658') in 0.023287 seconds
+  Import took 0.029898 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.297605 seconds.
-  path: Assets/Agents/male5/Materials
-  artifactKey: Guid(b5fe8e545ec103845b129271f5fccc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials using Guid(b5fe8e545ec103845b129271f5fccc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba238377a70a16a065da79a04a51d1f') in 0.005926 seconds
-  Import took 0.014247 seconds .
+  Time since last request: 0.069361 seconds.
+  path: Assets/Animations/Facial animations/male5.controller
+  artifactKey: Guid(c34c8bfd7ed9419418ec3b7896688029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male5.controller using Guid(c34c8bfd7ed9419418ec3b7896688029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c91647c4f251cdaeacaab0f6f710658') in 0.019996 seconds
+  Import took 0.025580 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.321258 seconds.
-  path: Assets/Agents/male5/Materials/brown_eye.mat
-  artifactKey: Guid(6eb80b4497a7e12449037a3ba3fce8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/brown_eye.mat using Guid(6eb80b4497a7e12449037a3ba3fce8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e52bdd494bf5ec6197b420835d49386') in 0.017985 seconds
-  Import took 0.024605 seconds .
+  Time since last request: 0.941293 seconds.
+  path: Assets/Animations/Facial animations/male6.controller
+  artifactKey: Guid(36850b7ac98b54b4f9b370c1f34f5474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male6.controller using Guid(36850b7ac98b54b4f9b370c1f34f5474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8100665af270efe76c7f1072b39f7d') in 0.029305 seconds
+  Import took 0.038130 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000455 seconds.
-  path: Assets/Agents/male5/Materials/short02_diffuse.mat
-  artifactKey: Guid(c2c2f0d25058c9d43891d13afbad4506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/short02_diffuse.mat using Guid(c2c2f0d25058c9d43891d13afbad4506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891e1c55ae5fd61d43307961a1f18b01') in 0.018562 seconds
-  Import took 0.024989 seconds .
+  Time since last request: 0.060573 seconds.
+  path: Assets/Animations/Facial animations/male6.controller
+  artifactKey: Guid(36850b7ac98b54b4f9b370c1f34f5474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male6.controller using Guid(36850b7ac98b54b4f9b370c1f34f5474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8100665af270efe76c7f1072b39f7d') in 0.029339 seconds
+  Import took 0.034965 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/Agents/male5/Materials/male_elegantsuit01_diffuse.mat
-  artifactKey: Guid(18fc0723e240e17469d0ef4440384883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/male_elegantsuit01_diffuse.mat using Guid(18fc0723e240e17469d0ef4440384883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1ee852069ae49abb7780b111ec5682') in 0.014612 seconds
-  Import took 0.019840 seconds .
+  Time since last request: 1.165002 seconds.
+  path: Assets/Animations/Facial animations/male7.controller
+  artifactKey: Guid(217e75d05d0bc434bb633b68240d2586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male7.controller using Guid(217e75d05d0bc434bb633b68240d2586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d6b9e87650664bf817372dd10f91eb') in 0.018308 seconds
+  Import took 0.023513 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Agents/male5/Materials/teeth.mat
-  artifactKey: Guid(adf961c06c315ae469fef0137d003358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/teeth.mat using Guid(adf961c06c315ae469fef0137d003358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f21446215ae3b249eaef8584a1dfb9a') in 0.014390 seconds
-  Import took 0.019432 seconds .
+  Time since last request: 0.010117 seconds.
+  path: Assets/Animations/Facial animations/male7.controller
+  artifactKey: Guid(217e75d05d0bc434bb633b68240d2586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male7.controller using Guid(217e75d05d0bc434bb633b68240d2586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d6b9e87650664bf817372dd10f91eb') in 0.017762 seconds
+  Import took 0.023034 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Agents/male5/Materials/eyebrow001.mat
-  artifactKey: Guid(bf8bd114bbf56fd489e31fc5ad8f2a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/eyebrow001.mat using Guid(bf8bd114bbf56fd489e31fc5ad8f2a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8482e914a0e72268d217d6f4ccc1234') in 0.011436 seconds
-  Import took 0.017500 seconds .
+  Time since last request: 1.776827 seconds.
+  path: Assets/Animations/Facial animations/male8.controller
+  artifactKey: Guid(bc9917908a7cc564aa6d299be1800d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male8.controller using Guid(bc9917908a7cc564aa6d299be1800d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a342415800128b901b193d5c6e7609d1') in 0.025604 seconds
+  Import took 0.030911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034896 seconds.
+  path: Assets/Animations/Facial animations/male8.controller
+  artifactKey: Guid(bc9917908a7cc564aa6d299be1800d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male8.controller using Guid(bc9917908a7cc564aa6d299be1800d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a342415800128b901b193d5c6e7609d1') in 0.022566 seconds
+  Import took 0.028282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.738474 seconds.
+  path: Assets/Animations/Facial animations/male9.controller
+  artifactKey: Guid(d45b6fea51be8ed45a891d7ea1410fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male9.controller using Guid(d45b6fea51be8ed45a891d7ea1410fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac51d235444d95f6bf61f2dd9d88be69') in 0.017423 seconds
+  Import took 0.022680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043726 seconds.
+  path: Assets/Animations/Facial animations/male9.controller
+  artifactKey: Guid(d45b6fea51be8ed45a891d7ea1410fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male9.controller using Guid(d45b6fea51be8ed45a891d7ea1410fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac51d235444d95f6bf61f2dd9d88be69') in 0.016213 seconds
+  Import took 0.021952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.745457 seconds.
+  path: Assets/Animations/Facial animations/male10.controller
+  artifactKey: Guid(dca0233e5dca85e49a64146060bbbde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male10.controller using Guid(dca0233e5dca85e49a64146060bbbde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91000a6338572f2b6251136c9f26a8f') in 0.026946 seconds
+  Import took 0.033014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033101 seconds.
+  path: Assets/Animations/Facial animations/male10.controller
+  artifactKey: Guid(dca0233e5dca85e49a64146060bbbde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/male10.controller using Guid(dca0233e5dca85e49a64146060bbbde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91000a6338572f2b6251136c9f26a8f') in 0.027524 seconds
+  Import took 0.033052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.217218 seconds.
+  path: Assets/Animations/Facial animations/woman5.controller
+  artifactKey: Guid(fcef4667a432fa94f830b0312800d484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman5.controller using Guid(fcef4667a432fa94f830b0312800d484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20cb19a9b237cf0ad0304dcf4e9c9c2') in 0.031309 seconds
+  Import took 0.036942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012198 seconds.
+  path: Assets/Animations/Facial animations/woman5.controller
+  artifactKey: Guid(fcef4667a432fa94f830b0312800d484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman5.controller using Guid(fcef4667a432fa94f830b0312800d484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20cb19a9b237cf0ad0304dcf4e9c9c2') in 0.026984 seconds
+  Import took 0.032650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.867299 seconds.
+  path: Assets/Animations/Facial animations/woman6.controller
+  artifactKey: Guid(3e15d37523eb3d8478eb85a64b5661b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman6.controller using Guid(3e15d37523eb3d8478eb85a64b5661b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885638ac7fba58723b129daaa22ef353') in 0.028035 seconds
+  Import took 0.033581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032230 seconds.
+  path: Assets/Animations/Facial animations/woman6.controller
+  artifactKey: Guid(3e15d37523eb3d8478eb85a64b5661b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman6.controller using Guid(3e15d37523eb3d8478eb85a64b5661b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885638ac7fba58723b129daaa22ef353') in 0.025796 seconds
+  Import took 0.031084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.235363 seconds.
+  path: Assets/Animations/Facial animations/woman7.controller
+  artifactKey: Guid(40d585bfaa6917944b0720fe8d6a3e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman7.controller using Guid(40d585bfaa6917944b0720fe8d6a3e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc986da97e452b054154a5895de2ea2') in 0.027450 seconds
+  Import took 0.032962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033596 seconds.
+  path: Assets/Animations/Facial animations/woman7.controller
+  artifactKey: Guid(40d585bfaa6917944b0720fe8d6a3e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/woman7.controller using Guid(40d585bfaa6917944b0720fe8d6a3e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc986da97e452b054154a5895de2ea2') in 0.025366 seconds
+  Import took 0.030876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.336093 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60abdac97b3836a4df1d9ea059c67ba9') in 0.282757 seconds
+  Import took 0.292377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.016122 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfc14577e110a01356aab785d7e980f') in 0.407857 seconds
+  Import took 0.417218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfc14577e110a01356aab785d7e980f') in 0.230479 seconds
+  Import took 0.239274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.353716 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bcdf9b5828d2f0dc9393a939102e5d') in 0.366706 seconds
+  Import took 0.375470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.362690 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50621213eb64aec87f73a0bf6ba8a2b') in 0.286469 seconds
+  Import took 0.296123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.666515 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041929fbfc67b3e46a81a1dba50dd47a') in 0.444864 seconds
+  Import took 0.453209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.024428 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49613d1b49c9441a2f3f26442b339dbe') in 0.407458 seconds
+  Import took 0.415762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.856124 seconds.
+  path: Assets/Agents/woman8/woman8.fbx
+  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2b189857b26cd915372ab2902a8efb') in 0.314048 seconds
+  Import took 0.322993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.610259 seconds.
+  path: Assets/Agents/woman8/Materials/brownlight_eye.mat
+  artifactKey: Guid(e06c97686e3322d43a656977bcd7bc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/brownlight_eye.mat using Guid(e06c97686e3322d43a656977bcd7bc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc6d6d04ba75d3d8cc7c7e7b72d7239') in 0.018531 seconds
+  Import took 0.024391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Agents/woman8/Materials/eyebrow001.mat
+  artifactKey: Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/eyebrow001.mat using Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3f06824bb03e3af5a2759c84839f62') in 0.010327 seconds
+  Import took 0.015695 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000347 seconds.
-  path: Assets/Agents/male5/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(ebc0c867380c1b544a8b36b893b6a341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/tongue01_diffuse.mat using Guid(ebc0c867380c1b544a8b36b893b6a341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9707d35c460243165af21fa68b4b8a4') in 0.011881 seconds
-  Import took 0.016953 seconds .
+  path: Assets/Agents/woman8/Materials/MJ-shoes3.mat
+  artifactKey: Guid(691c8a1971e71ea48a879455b71e6433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/MJ-shoes3.mat using Guid(691c8a1971e71ea48a879455b71e6433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bedfda3b5012f20b6f4d78f8fe8b6c2c') in 0.014164 seconds
+  Import took 0.019546 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000414 seconds.
-  path: Assets/Agents/male5/Materials/young_lightskinned_female_diffuse3.mat
-  artifactKey: Guid(da162f35dabfccd48a367e78d7e548ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/young_lightskinned_female_diffuse3.mat using Guid(da162f35dabfccd48a367e78d7e548ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689f0ace0c27449910706628069de8d6') in 0.013958 seconds
-  Import took 0.020098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/Agents/male5/Materials/shoes04_diffuse.mat
-  artifactKey: Guid(b3e706de22da0754880131026bda0b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male5/Materials/shoes04_diffuse.mat using Guid(b3e706de22da0754880131026bda0b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29de1c62ae074ecee9b348c6ecb54052') in 0.012974 seconds
-  Import took 0.017988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.385877 seconds.
-  path: Assets/Agents/male6
-  artifactKey: Guid(cd169954d33d0d241b03a677ff35a105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6 using Guid(cd169954d33d0d241b03a677ff35a105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3807df54b8783ebba9a6d538440286') in 0.004043 seconds
-  Import took 0.011162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.593043 seconds.
-  path: Assets/Agents/male6/male6.fbx
-  artifactKey: Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/male6.fbx using Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d538a5f2a900264c3c168ae83844cf9') in 0.270776 seconds
-  Import took 0.280395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.579801 seconds.
-  path: Assets/Agents/male6/male6.fbx
-  artifactKey: Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/male6.fbx using Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767b6e5ce5e2fbf9163057087688950d') in 0.282431 seconds
-  Import took 0.299928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.792193 seconds.
-  path: Assets/Agents/male6/male6.fbx
-  artifactKey: Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/male6.fbx using Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83bf4493fb2e4cbc99a0b9be5ad2b0c5') in 0.304448 seconds
-  Import took 0.314623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.326692 seconds.
-  path: Assets/Agents/male6/male6.fbx
-  artifactKey: Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/male6.fbx using Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca75060f1f6d614c76f26d81b9f2d98') in 0.293103 seconds
-  Import took 0.301656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.704535 seconds.
-  path: Assets/Agents/male6/male6.fbx
-  artifactKey: Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/male6.fbx using Guid(f4351acaafda47546bb3cd43237735d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ca086f02960e78a3252ba33980304b') in 0.279637 seconds
-  Import took 0.287866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.651660 seconds.
-  path: Assets/Agents/male6/Materials
-  artifactKey: Guid(02fc9fa3e7f90a94299aca01b8cd6a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials using Guid(02fc9fa3e7f90a94299aca01b8cd6a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10768e2311056122340a89292ac56d6e') in 0.004128 seconds
-  Import took 0.019495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029007 seconds.
-  path: Assets/Agents/male6/Materials/brown_eye.mat
-  artifactKey: Guid(b2275a4be39d4344dba8d2482c631ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/brown_eye.mat using Guid(b2275a4be39d4344dba8d2482c631ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc50b2c3802f71216bf0cc9cff5c681') in 0.013565 seconds
-  Import took 0.021031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000469 seconds.
-  path: Assets/Agents/male6/Materials/teeth.mat
-  artifactKey: Guid(755022e18015b4141b1964dc007e0a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/teeth.mat using Guid(755022e18015b4141b1964dc007e0a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30bdbc216d55818f0d6ebc15eadcbc34') in 0.015227 seconds
-  Import took 0.020751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/Agents/male6/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(7875c427ab052364ea5aea1260ee5563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/tongue01_diffuse.mat using Guid(7875c427ab052364ea5aea1260ee5563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9433ae1625ea24a5feb07b9aac0543') in 0.010795 seconds
-  Import took 0.016308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Agents/male6/Materials/jeanstex1.mat
-  artifactKey: Guid(6b9fac2d27d691745a79c0af23c6273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/jeanstex1.mat using Guid(6b9fac2d27d691745a79c0af23c6273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc85bb83709631ea854e817f0956cb0e') in 0.012258 seconds
-  Import took 0.017923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Agents/male6/Materials/short01_diffuse.mat
-  artifactKey: Guid(eba4722609452394dbfc6464003f41aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/short01_diffuse.mat using Guid(eba4722609452394dbfc6464003f41aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091cf6ab40f1bd39287c27bd584cea2d') in 0.014526 seconds
-  Import took 0.019763 seconds .
+  Time since last request: 0.000293 seconds.
+  path: Assets/Agents/woman8/Materials/F_Dress_04.mat
+  artifactKey: Guid(7f77633af2d0e444ca237ca16a7d2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/F_Dress_04.mat using Guid(7f77633af2d0e444ca237ca16a7d2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69334a448e6e561008b73bd18b0876a') in 0.015713 seconds
+  Import took 0.021052 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000356 seconds.
-  path: Assets/Agents/male6/Materials/young_lightskinned_male_diffuse.mat
-  artifactKey: Guid(9dba3580a6fa3864f9e5ac1b11bfac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/young_lightskinned_male_diffuse.mat using Guid(9dba3580a6fa3864f9e5ac1b11bfac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f644f09a381efb774a93fdf6171ef866') in 0.013474 seconds
-  Import took 0.018949 seconds .
+  path: Assets/Agents/woman8/Materials/GingerHair.mat
+  artifactKey: Guid(f2c6cb3f704016a4fbf18dabd19edfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/GingerHair.mat using Guid(f2c6cb3f704016a4fbf18dabd19edfe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fba5e167e0db28032172918aaedb716') in 0.017331 seconds
+  Import took 0.022563 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Agents/male6/Materials/eyebrow001.mat
-  artifactKey: Guid(6f6dc1245fa99bd46b4f64975bdedadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/eyebrow001.mat using Guid(6f6dc1245fa99bd46b4f64975bdedadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a358476310013375a15790c0f7c73e29') in 0.010160 seconds
-  Import took 0.015386 seconds .
+  Time since last request: 0.000303 seconds.
+  path: Assets/Agents/woman8/Materials/eyelashes03.mat
+  artifactKey: Guid(059bf8d832b074f47b579d1bf82bc289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/eyelashes03.mat using Guid(059bf8d832b074f47b579d1bf82bc289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4183de5cbb534c04f9e5632d8148705') in 0.011083 seconds
+  Import took 0.016382 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000450 seconds.
-  path: Assets/Agents/male6/Materials/shoes03_diffuse.mat
-  artifactKey: Guid(0fe74c42b898cbc4ea7a2d56f2c9ef6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/shoes03_diffuse.mat using Guid(0fe74c42b898cbc4ea7a2d56f2c9ef6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1df26536a0ed48c7d20d81448a2df2') in 0.012051 seconds
-  Import took 0.016948 seconds .
+  Time since last request: 0.055304 seconds.
+  path: Assets/Agents/woman8/Materials/F_Dress_04.mat
+  artifactKey: Guid(7f77633af2d0e444ca237ca16a7d2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/F_Dress_04.mat using Guid(7f77633af2d0e444ca237ca16a7d2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69334a448e6e561008b73bd18b0876a') in 0.015097 seconds
+  Import took 0.020744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.941576 seconds.
+  path: Assets/Agents/woman8/Materials/eyebrow001.mat
+  artifactKey: Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/eyebrow001.mat using Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb386f03f0b24ed2db50f1a3654de952') in 0.011938 seconds
+  Import took 0.017749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Agents/woman8/Materials/eyelashes03.mat
+  artifactKey: Guid(059bf8d832b074f47b579d1bf82bc289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman8/Materials/eyelashes03.mat using Guid(059bf8d832b074f47b579d1bf82bc289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099619c14567cbcc8410aad12a87b4fb') in 0.011583 seconds
+  Import took 0.016716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.659184 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a89939dc5e85b540fdd65a1649fa259') in 0.005320 seconds
+  Import took 0.012737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053074 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a89939dc5e85b540fdd65a1649fa259') in 0.004621 seconds
+  Import took 0.009927 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.525 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.1 MB.
+System memory in use after: 203.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2930.
+Total: 4.635800 ms (FindLiveObjects: 0.439400 ms CreateObjectMapping: 0.166300 ms MarkObjects: 3.935400 ms  DeleteObjects: 0.092400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 401.399389 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697fa90f3f5b704962067d92d1705034') in 0.041084 seconds
+  Import took 0.056204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.378188 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697fa90f3f5b704962067d92d1705034') in 0.026265 seconds
+  Import took 0.031499 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.517 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.2 MB.
+System memory in use after: 203.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2934.
+Total: 3.922500 ms (FindLiveObjects: 0.325400 ms CreateObjectMapping: 0.123600 ms MarkObjects: 3.367500 ms  DeleteObjects: 0.104300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 509.180868 seconds.
+  path: Assets/Animations/Facial animations/blink.anim
+  artifactKey: Guid(24363974b7a49c947be7170313e377c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/blink.anim using Guid(24363974b7a49c947be7170313e377c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340f9e5b4359945bbba6b9dc7e1c59c6') in 0.023815 seconds
+  Import took 0.031013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 272.861266 seconds.
+  path: Assets/Kevin Iglesias
+  artifactKey: Guid(0b0e3c89398bf484f9995174beb4efdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias using Guid(0b0e3c89398bf484f9995174beb4efdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f11b0a4cbe9c8686b7f40a892a78f62') in 0.003106 seconds
+  Import took 0.009712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.323651 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions
+  artifactKey: Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions using Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19136830aec53b3d1c09573f995b630') in 0.003393 seconds
+  Import took 0.008681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.124327 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations
+  artifactKey: Guid(7eb11f9df068c2b45bc52cfc0d6e3f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations using Guid(7eb11f9df068c2b45bc52cfc0d6e3f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39514b87af4b5ef498e2f3541d0c24e5') in 0.003958 seconds
+  Import took 0.009794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.523267 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement
+  artifactKey: Guid(162d3c986ae81044b8e9de5caae05de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement using Guid(162d3c986ae81044b8e9de5caae05de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9101a6a2de7f512c648d516fd77fb6da') in 0.003937 seconds
+  Import took 0.010230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097576 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx
+  artifactKey: Guid(067cc188e25b78b4a940a9fa67cd6ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Jump01.fbx using Guid(067cc188e25b78b4a940a9fa67cd6ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f202915caa22dabce61f9a35745fd2f') in 0.034674 seconds
+  Import took 0.040291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx
+  artifactKey: Guid(bd1c2e9064da28e4fb0fe4a3f6ff4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx using Guid(bd1c2e9064da28e4fb0fe4a3f6ff4e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b186ff65be429f3c4c018de17443e19') in 0.017009 seconds
+  Import took 0.022942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx
+  artifactKey: Guid(0536f044bd409ff419dd726bc69d2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01.fbx using Guid(0536f044bd409ff419dd726bc69d2676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322a2ad8f5f5989928da77f338cb678e') in 0.014460 seconds
+  Import took 0.020213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx
+  artifactKey: Guid(154a724602422044c91070a5f3c67c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx using Guid(154a724602422044c91070a5f3c67c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8473c8507ada266fd44e942c2f061cbd') in 0.019263 seconds
+  Import took 0.025479 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000430 seconds.
-  path: Assets/Agents/male6/Materials/toptex1.mat
-  artifactKey: Guid(694d981242219bf45ba5c8f1479f55fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/toptex1.mat using Guid(694d981242219bf45ba5c8f1479f55fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434fd1ec979e9e646a92e03ac119ba09') in 0.014632 seconds
-  Import took 0.021026 seconds .
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx
+  artifactKey: Guid(7eebd174ff53112419b27f9d903573d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx using Guid(7eebd174ff53112419b27f9d903573d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aeec110b98745f5898862f15887ee58') in 0.011923 seconds
+  Import took 0.017458 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006175 seconds.
-  path: Assets/Agents/male6/Materials/short01_diffuse.mat
-  artifactKey: Guid(eba4722609452394dbfc6464003f41aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male6/Materials/short01_diffuse.mat using Guid(eba4722609452394dbfc6464003f41aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091cf6ab40f1bd39287c27bd584cea2d') in 0.013073 seconds
-  Import took 0.018203 seconds .
+  Time since last request: 0.000334 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx
+  artifactKey: Guid(98d8219075968bd43b75fdba6b4463d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx using Guid(98d8219075968bd43b75fdba6b4463d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f4365d57397238747aa1706d1770ac') in 0.011358 seconds
+  Import took 0.016880 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 208.947658 seconds.
-  path: Assets/Agents/male7
-  artifactKey: Guid(0ab608b9d0a0df8428b1a68f141427fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7 using Guid(0ab608b9d0a0df8428b1a68f141427fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed4b61a78837ccb1b6055e237b234ff') in 0.004958 seconds
-  Import took 0.013752 seconds .
+  Time since last request: 0.000430 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx
+  artifactKey: Guid(46d5b47e60163f148ada32ff97c7aa32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx using Guid(46d5b47e60163f148ada32ff97c7aa32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d7fdaad600218e8f2cbcf54856f179') in 0.018121 seconds
+  Import took 0.023891 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.092517 seconds.
-  path: Assets/Agents/male7/male7.fbx
-  artifactKey: Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7/male7.fbx using Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c397744690a02982ade07e065f4abfae') in 0.237007 seconds
-  Import took 0.246327 seconds .
+  Time since last request: 8.354040 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers
+  artifactKey: Guid(2772e80ca8ca2eb438c6fad54e343aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers using Guid(2772e80ca8ca2eb438c6fad54e343aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15aa6708b0fee400cf84af73b241f9a') in 0.003317 seconds
+  Import took 0.008458 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 11.906265 seconds.
-  path: Assets/Agents/male7/male7.fbx
-  artifactKey: Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7/male7.fbx using Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb29af7ffc910ed2f10c63c475d7d29b') in 0.322459 seconds
-  Import took 0.339985 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.769160 seconds.
-  path: Assets/Agents/male7/male7.fbx
-  artifactKey: Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7/male7.fbx using Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4641e28ccf8b3da19e0e19f12207cbdf') in 0.374748 seconds
-  Import took 0.392305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.260750 seconds.
-  path: Assets/Agents/male7/male7.fbx
-  artifactKey: Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7/male7.fbx using Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f517df70165a06fe66ee820eaebedd42') in 0.286778 seconds
-  Import took 0.295939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.623410 seconds.
-  path: Assets/Agents/male8
-  artifactKey: Guid(6b63262bb20d4704e94364f2f1556ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8 using Guid(6b63262bb20d4704e94364f2f1556ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9788b44392880ad1a477e3ad2585e612') in 0.002967 seconds
-  Import took 0.018684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.252761 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10eb50a169b2cc68a8b70a79bf443ec7') in 0.226137 seconds
-  Import took 0.245211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.453543 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7252ce17b731fee00d35df12eb51614f') in 0.379404 seconds
-  Import took 0.390227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.474996 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e96964dcce0b60920eb4dff42462a4') in 0.279462 seconds
-  Import took 0.290158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.763616 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25f73a15ff72b0d13108a2295401c89') in 0.255411 seconds
-  Import took 0.263108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.624047 seconds.
-  path: Assets/Agents/male9
-  artifactKey: Guid(49d1326ca3fdb5746ba96a705db8310a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9 using Guid(49d1326ca3fdb5746ba96a705db8310a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a41c837a97f8bfaf6302e6573132cfc') in 0.004041 seconds
-  Import took 0.013068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.093034 seconds.
-  path: Assets/Agents/male9/male9.fbx
-  artifactKey: Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9/male9.fbx using Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b9aa7fd814294fd10aa410f2de8f1d') in 0.191957 seconds
-  Import took 0.203311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.682485 seconds.
-  path: Assets/Agents/male9/male9.fbx
-  artifactKey: Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9/male9.fbx using Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50daf126514ce7f79fb9e4a9fd0ed4a') in 0.268896 seconds
-  Import took 0.280823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.832051 seconds.
-  path: Assets/Agents/male9/male9.fbx
-  artifactKey: Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9/male9.fbx using Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b991a2886a4095a4b3e84af000d6dc') in 0.264504 seconds
-  Import took 0.272736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.064413 seconds.
-  path: Assets/Agents/male9/male9.fbx
-  artifactKey: Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9/male9.fbx using Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983940312ef5aa29fede131565dcc9b2') in 0.242129 seconds
-  Import took 0.251883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.118209 seconds.
-  path: Assets/Agents/male10
-  artifactKey: Guid(f690a8a87840e884095412d18a474f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10 using Guid(f690a8a87840e884095412d18a474f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab194ab36c4aae9ee7706cbefc426e12') in 0.002936 seconds
-  Import took 0.008500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.098094 seconds.
-  path: Assets/Agents/male10/male10.fbx
-  artifactKey: Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/male10.fbx using Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f031de618d62222fd993b8453c0f0f1') in 0.381592 seconds
-  Import took 0.394738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.934788 seconds.
-  path: Assets/Agents/male10/male10.fbx
-  artifactKey: Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/male10.fbx using Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98bfaa476b82101ba1766eaa2668628') in 0.364521 seconds
-  Import took 0.372987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.607767 seconds.
-  path: Assets/Agents/male10/male10.fbx
-  artifactKey: Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/male10.fbx using Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4a7bd16636beb6a9d9585a3de240b9') in 0.510911 seconds
-  Import took 0.528247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.944370 seconds.
-  path: Assets/Agents/male10/male10.fbx
-  artifactKey: Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/male10.fbx using Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03139d123e726cb486a215b83d2aa77f') in 0.292588 seconds
-  Import took 0.303407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.722214 seconds.
-  path: Assets/Agents/male10/male10.fbx
-  artifactKey: Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/male10.fbx using Guid(b65ec503b4cddfd4581ba5c4194fac18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2febe57fcf71ad62baaa4902a08765') in 0.269252 seconds
-  Import took 0.278034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.252370 seconds.
-  path: Assets/Agents/male10/Materials
-  artifactKey: Guid(aeb4281c7006b7d409b3b9ead583a47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials using Guid(aeb4281c7006b7d409b3b9ead583a47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d8414e00985a0cddde98a62b9008df') in 0.002606 seconds
-  Import took 0.008459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.196502 seconds.
-  path: Assets/Agents/male10/Materials/black.mat
-  artifactKey: Guid(cbfeee41914a0e841b02fc1e9f4de0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/black.mat using Guid(cbfeee41914a0e841b02fc1e9f4de0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dab32ffc5374b9ccb1b8b57e99e243f') in 0.012995 seconds
-  Import took 0.026364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Assets/Agents/male10/Materials/elvware3.mat
-  artifactKey: Guid(2108821fecf23a04e858680eb1041923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/elvware3.mat using Guid(2108821fecf23a04e858680eb1041923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5550716adf0384f1b341cbea30cf19') in 0.013269 seconds
-  Import took 0.018908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/Agents/male10/Materials/teeth.mat
-  artifactKey: Guid(6479e71e8ee4faa41969e297f13a61b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/teeth.mat using Guid(6479e71e8ee4faa41969e297f13a61b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa8c6db6f494056357a8036061b5383') in 0.013024 seconds
-  Import took 0.018768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Agents/male10/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(19f18bfceaef62a4d80bf3fd6a079b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/tongue01_diffuse.mat using Guid(19f18bfceaef62a4d80bf3fd6a079b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da10f5df7da81453a846168ab802cb50') in 0.010906 seconds
-  Import took 0.016152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Agents/male10/Materials/eyelashes04.mat
-  artifactKey: Guid(0e5e2120be95cc746a8ac8944255e9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/eyelashes04.mat using Guid(0e5e2120be95cc746a8ac8944255e9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bad9d3ab426211ee4c63a8779f325ff') in 0.010210 seconds
-  Import took 0.015989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Agents/male10/Materials/Jeans_diffuse.mat
-  artifactKey: Guid(e71ccebc836d8f341ba32522270578ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/Jeans_diffuse.mat using Guid(e71ccebc836d8f341ba32522270578ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d7ec647958fce69da24f971372982a') in 0.012764 seconds
-  Import took 0.017968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Agents/male10/Materials/young_lightskinned_female_diffuse.mat
-  artifactKey: Guid(fb36759b794622b41a9d50d076389537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/young_lightskinned_female_diffuse.mat using Guid(fb36759b794622b41a9d50d076389537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de71c23df837ffc768a29b6076489a4') in 0.012592 seconds
-  Import took 0.018222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Agents/male10/Materials/eyebrow001.mat
-  artifactKey: Guid(b2246c23bd51e104badbc2146fdf6e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/eyebrow001.mat using Guid(b2246c23bd51e104badbc2146fdf6e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d5b77818526cad328adc59f670efe1') in 0.010484 seconds
-  Import took 0.015939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/Agents/male10/Materials/lightblue_eye.mat
-  artifactKey: Guid(515b49a9664498b4f9c486c1724bd10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/lightblue_eye.mat using Guid(515b49a9664498b4f9c486c1724bd10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fa5f549efc9f3c430b4283918fd358') in 0.012925 seconds
-  Import took 0.018167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/Agents/male10/Materials/shoes05_diffuse.mat
-  artifactKey: Guid(1d59b32cff9a1b043a3add0a515bdc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/shoes05_diffuse.mat using Guid(1d59b32cff9a1b043a3add0a515bdc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e21abac86eaf18d0068738de0df16d') in 0.012270 seconds
-  Import took 0.017796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028258 seconds.
-  path: Assets/Agents/male10/Materials/lightblue_eye.mat
-  artifactKey: Guid(515b49a9664498b4f9c486c1724bd10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male10/Materials/lightblue_eye.mat using Guid(515b49a9664498b4f9c486c1724bd10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68fa5f549efc9f3c430b4283918fd358') in 0.011872 seconds
-  Import took 0.017138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.383679 seconds.
-  path: Assets/Agents/woman5
-  artifactKey: Guid(b812121ef379eb345b2f495e08eae664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5 using Guid(b812121ef379eb345b2f495e08eae664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd00da5e4bd6660c2d30fc20b57deb5') in 0.003017 seconds
-  Import took 0.009697 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.043665 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac7e30777a9caeb39520145afc9eb4c') in 0.251324 seconds
-  Import took 0.261474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.952013 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c36518919810cb41ef45dc8207bf053') in 0.352352 seconds
-  Import took 0.361530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.854321 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b6d4e1d895842b918be075eadc26ab') in 0.492829 seconds
-  Import took 0.502284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.104481 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4c8a71084204d822ce13f03b84d9dd') in 0.342736 seconds
-  Import took 0.353063 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.970717 seconds.
-  path: Assets/Agents/woman6
-  artifactKey: Guid(b8963a9b0a6879f4fb71693c7d2b012d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6 using Guid(b8963a9b0a6879f4fb71693c7d2b012d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '416108264406ce0278aa1b38193b784b') in 0.013219 seconds
-  Import took 0.019004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.086380 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bb1274746bde7a44775e583440247e') in 0.274407 seconds
-  Import took 0.293248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.996926 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21304097d80dd1b9a8c72f999db11b17') in 0.487916 seconds
-  Import took 0.498378 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.2 MB.
+System memory in use after: 203.4 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 10.008764 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe593c23790735030103f8a342caae5') in 0.422683 seconds
-  Import took 0.432712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.077949 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c2e8257b62407b982b02f93d406b8c') in 0.354397 seconds
-  Import took 0.365014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.601168 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265eadea1c3a8a18749c64354e7b442d') in 0.379212 seconds
-  Import took 0.391014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.969412 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba315343d8cc8b6d91099115c7965dc') in 0.381664 seconds
-  Import took 0.391051 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2938.
+Total: 4.254800 ms (FindLiveObjects: 0.310600 ms CreateObjectMapping: 0.092900 ms MarkObjects: 3.753900 ms  DeleteObjects: 0.096100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.990254 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac9be9d94eaf0325cc57320e3a3cdba') in 0.446961 seconds
-  Import took 0.458081 seconds .
+  Time since last request: 26.483136 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b9709d04bfd8be28585a72f9be9534') in 0.043166 seconds
+  Import took 0.049226 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 6.728153 seconds.
-  path: Assets/Agents/woman7/woman7.fbx
-  artifactKey: Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/woman7.fbx using Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c816b775277ff29fc24c4d687777553') in 0.358745 seconds
-  Import took 0.371191 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008859 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.535 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000501 seconds.
-  path: Assets/Agents/woman7
-  artifactKey: Guid(2b577b86e9cbc1a4e80375d2a235f466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7 using Guid(2b577b86e9cbc1a4e80375d2a235f466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d634e90f3c1897425cbf9b5f7415c2') in 0.002506 seconds
-  Import took 0.007618 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2942.
+Total: 3.706900 ms (FindLiveObjects: 0.415100 ms CreateObjectMapping: 0.095500 ms MarkObjects: 3.099300 ms  DeleteObjects: 0.094900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.299281 seconds.
-  path: Assets/Agents/woman7/woman7.fbx
-  artifactKey: Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/woman7.fbx using Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ced0a030f48437a34fb2160570bac4d') in 0.318406 seconds
-  Import took 0.327877 seconds .
+  Time since last request: 596.151337 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Sprint.controller
+  artifactKey: Guid(6cc513001c84c714baa94b6d24a332c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Sprint.controller using Guid(6cc513001c84c714baa94b6d24a332c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299598d112ada8c875918af54135cb3c') in 0.022427 seconds
+  Import took 0.029615 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.882100 seconds.
-  path: Assets/Agents/woman7/woman7.fbx
-  artifactKey: Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/woman7.fbx using Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51376cc7836c3308a1d2221b3b55c738') in 0.471295 seconds
-  Import took 0.483805 seconds .
+  Time since last request: 1.902776 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@RunBackwards.controller
+  artifactKey: Guid(b685c37357fd51347943d79847b19701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@RunBackwards.controller using Guid(b685c37357fd51347943d79847b19701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a06c52d810ef3eb7fc807c2d8b4b7a4') in 0.004801 seconds
+  Import took 0.009995 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.138566 seconds.
-  path: Assets/Agents/woman7/woman7.fbx
-  artifactKey: Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/woman7.fbx using Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad7829e08e4a86d362ed5899f29c249') in 0.341141 seconds
-  Import took 0.351594 seconds .
+  Time since last request: 2.190778 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Run.controller
+  artifactKey: Guid(eb79e3fd0dd669f40a90a984b92a0ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Run.controller using Guid(eb79e3fd0dd669f40a90a984b92a0ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb26b9151374d7ffb97ed13ad79579f') in 0.008081 seconds
+  Import took 0.016468 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.942868 seconds.
-  path: Assets/Agents/woman8
-  artifactKey: Guid(abec50fc21e06984a91459ec574d8202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8 using Guid(abec50fc21e06984a91459ec574d8202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604a7d32078b1adc106a4e026fbb5c1c') in 0.005141 seconds
-  Import took 0.012779 seconds .
+  Time since last request: 1.016905 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Jump.controller
+  artifactKey: Guid(54ff599963ec97843ad4d4ddeeb61810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Jump.controller using Guid(54ff599963ec97843ad4d4ddeeb61810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56728435cbe0e63194af839280b60d46') in 0.007302 seconds
+  Import took 0.015377 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.092912 seconds.
-  path: Assets/Agents/woman8/woman8.fbx
-  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e0703d9b7e629a2ec097fc6a8cf4b5') in 0.266989 seconds
-  Import took 0.278595 seconds .
+  Time since last request: 1.417426 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Idle.controller
+  artifactKey: Guid(a8555c0cff30527479e32562cef9141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Idle.controller using Guid(a8555c0cff30527479e32562cef9141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65da68d4c24680749c89c8ed969d9a5') in 0.012992 seconds
+  Import took 0.019202 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.338087 seconds.
-  path: Assets/Agents/woman8/woman8.fbx
-  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e60891f28824693f524fba7c06ec5c') in 0.482508 seconds
-  Import took 0.491913 seconds .
+  Time since last request: 70.370210 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@WalkTalk.controller
+  artifactKey: Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@WalkTalk.controller using Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c116c6acbf52e00f5814b73a58805f4') in 0.026808 seconds
+  Import took 0.032396 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.422014 seconds.
-  path: Assets/Agents/woman8/woman8.fbx
-  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafdcaa0af0ff725a644fda3631d34cf') in 0.426228 seconds
-  Import took 0.435462 seconds .
+  Time since last request: 59.235774 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59116a7d49ad831f7880018d349e0d48') in 0.006564 seconds
+  Import took 0.012259 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.748399 seconds.
-  path: Assets/Agents/woman8/woman8.fbx
-  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc9c8e5afa7c3cb23d71c2c2281cfe5') in 0.353098 seconds
-  Import took 0.364997 seconds .
+  Time since last request: 0.094663 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59116a7d49ad831f7880018d349e0d48') in 0.003392 seconds
+  Import took 0.008483 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.168702 seconds.
-  path: Assets/Agents/woman8/woman8.fbx
-  artifactKey: Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/woman8.fbx using Guid(6a3e4389f76df23479f0e305a00316cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a5c75f89369ea25224f191544b09fe') in 0.273842 seconds
-  Import took 0.287383 seconds .
+  Time since last request: 71.110295 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d20e87d9ea42a944ed06f61f50d75a5') in 0.043540 seconds
+  Import took 0.049572 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.624208 seconds.
-  path: Assets/Agents/woman8/Materials
-  artifactKey: Guid(9231149578aec0e40a40cbd21d98b2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials using Guid(9231149578aec0e40a40cbd21d98b2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937dadc04505465717193eeb69805aa7') in 0.002646 seconds
-  Import took 0.007841 seconds .
+  Time since last request: 0.060863 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d20e87d9ea42a944ed06f61f50d75a5') in 0.043969 seconds
+  Import took 0.050382 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.266926 seconds.
-  path: Assets/Agents/woman8/Materials/3tex1.mat
-  artifactKey: Guid(2d36b299eb7f4374cb5348a903523951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/3tex1.mat using Guid(2d36b299eb7f4374cb5348a903523951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7390538f5654e1d531bd8a88d79d086') in 0.017065 seconds
-  Import took 0.022488 seconds .
+  Time since last request: 34.429654 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab3de94e771176e7b726894046020b2') in 0.042729 seconds
+  Import took 0.048159 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/Agents/woman8/Materials/eyebrow001.mat
-  artifactKey: Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/eyebrow001.mat using Guid(9b32f1a84faedf54aa8d9ab859ae03c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3f06824bb03e3af5a2759c84839f62') in 0.010443 seconds
-  Import took 0.016101 seconds .
+  Time since last request: 0.058546 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab3de94e771176e7b726894046020b2') in 0.042286 seconds
+  Import took 0.047584 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/Agents/woman8/Materials/eyelashes02.mat
-  artifactKey: Guid(b0a17d1cb8f62234a8d7f7ad9c35c66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/eyelashes02.mat using Guid(b0a17d1cb8f62234a8d7f7ad9c35c66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb9c7f0ab1c9a73ddf251902977e9ef') in 0.011020 seconds
-  Import took 0.016688 seconds .
+  Time since last request: 155.950539 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller
+  artifactKey: Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@Walk.controller using Guid(75d3a58b3d7879f41926561701407a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cb305b7e1e3c0e53bf0af78885e8d5') in 0.006270 seconds
+  Import took 0.013258 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Agents/woman8/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(8ce9cf257165ff546966571280fcd2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/tongue01_diffuse.mat using Guid(8ce9cf257165ff546966571280fcd2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfea1c31b69b1fe579d04113923acc1f') in 0.010478 seconds
-  Import took 0.015840 seconds .
+  Time since last request: 2.553463 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@WalkTalk.controller
+  artifactKey: Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/BasicMotions@WalkTalk.controller using Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224abea2fb6a4b09837263ba468faa9b') in 0.027314 seconds
+  Import took 0.034418 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Agents/woman8/Materials/Wool_02_UV_H_CM_1.mat
-  artifactKey: Guid(1932049fe1e1adc40bb58673db56bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/Wool_02_UV_H_CM_1.mat using Guid(1932049fe1e1adc40bb58673db56bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578837447f24998708194090b5809c3f') in 0.011379 seconds
-  Import took 0.016641 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.499 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.2 MB.
+System memory in use after: 203.4 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Agents/woman8/Materials/blackminiskirt.mat
-  artifactKey: Guid(8f473939636f4c648a2f15db22d0587a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/blackminiskirt.mat using Guid(8f473939636f4c648a2f15db22d0587a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6a4f49fea1d80d96e61ff2af59699f') in 0.016201 seconds
-  Import took 0.022129 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2946.
+Total: 4.796500 ms (FindLiveObjects: 0.427300 ms CreateObjectMapping: 0.164700 ms MarkObjects: 4.105700 ms  DeleteObjects: 0.096600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000476 seconds.
-  path: Assets/Agents/woman8/Materials/long_alpha7.mat
-  artifactKey: Guid(29da3ae539e0f2f4d8de9da6ff47aa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/long_alpha7.mat using Guid(29da3ae539e0f2f4d8de9da6ff47aa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01934ed6d4a2d29c8ee87f78459ff678') in 0.012822 seconds
-  Import took 0.018693 seconds .
+  Time since last request: 114.956416 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController
+  artifactKey: Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/New Animator Override Controller.overrideController using Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf8934fb7fe324d84249e27ec86bc23') in 0.017774 seconds
+  Import took 0.024655 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Agents/woman8/Materials/young_lightskinned_female_diffuse.mat
-  artifactKey: Guid(4e528bd4c706ca247910491b9a1fa717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/young_lightskinned_female_diffuse.mat using Guid(4e528bd4c706ca247910491b9a1fa717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa86a031eb7352eaa3945a16a64c5cd') in 0.011723 seconds
-  Import took 0.017791 seconds .
+  Time since last request: 83.509976 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk5.overrideController
+  artifactKey: Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk5.overrideController using Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf85d257edaa1abea3f55993d55cd5a2') in 0.053353 seconds
+  Import took 0.058847 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Agents/woman8/Materials/brown_eye.mat
-  artifactKey: Guid(d85d43f4b85b12d4b88b2a01f05f621f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/brown_eye.mat using Guid(d85d43f4b85b12d4b88b2a01f05f621f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97159318ac51eb560c7a314002f4233') in 0.011717 seconds
-  Import took 0.017182 seconds .
+  Time since last request: 0.048992 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk5.overrideController
+  artifactKey: Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk5.overrideController using Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf85d257edaa1abea3f55993d55cd5a2') in 0.056290 seconds
+  Import took 0.063248 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Agents/woman8/Materials/teeth.mat
-  artifactKey: Guid(0cf620be66635fc4285372a351304d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman8/Materials/teeth.mat using Guid(0cf620be66635fc4285372a351304d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '954e612e418c4d8177cd16199f0b44e3') in 0.012007 seconds
-  Import took 0.017648 seconds .
+  Time since last request: 13.081967 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk6.overrideController
+  artifactKey: Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk6.overrideController using Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3235418aca36fc299b36e16a8b2aea') in 0.005149 seconds
+  Import took 0.011907 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.417511 seconds.
-  path: Assets/Agents/woman9
-  artifactKey: Guid(b19162c51ed02654fb98df84942c66dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9 using Guid(b19162c51ed02654fb98df84942c66dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe62b055cf7c9ac7a5986e66660c019d') in 0.003752 seconds
-  Import took 0.010425 seconds .
+  Time since last request: 0.094893 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk6.overrideController
+  artifactKey: Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk6.overrideController using Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3235418aca36fc299b36e16a8b2aea') in 0.004977 seconds
+  Import took 0.011399 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.536624 seconds.
-  path: Assets/Agents/woman9/woman9.fbx
-  artifactKey: Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/woman9.fbx using Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0046842a3d31e7ca30d5baa73635b2fc') in 0.249422 seconds
-  Import took 0.259416 seconds .
+  Time since last request: 97.613969 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk7.overrideController
+  artifactKey: Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk7.overrideController using Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8491b5e71ff4f53529ce419ca64ec45') in 0.003824 seconds
+  Import took 0.018867 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.774918 seconds.
-  path: Assets/Agents/woman9/woman9.fbx
-  artifactKey: Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/woman9.fbx using Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a82d78556758c816d160cc5facfee9') in 0.540177 seconds
-  Import took 0.552318 seconds .
+  Time since last request: 0.088714 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk7.overrideController
+  artifactKey: Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk7.overrideController using Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8491b5e71ff4f53529ce419ca64ec45') in 0.003354 seconds
+  Import took 0.008451 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.656750 seconds.
-  path: Assets/Agents/woman9/woman9.fbx
-  artifactKey: Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/woman9.fbx using Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212d1d0344c0a0e44c15589665dfa4af') in 0.522389 seconds
-  Import took 0.532500 seconds .
+  Time since last request: 13.511532 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk8.overrideController
+  artifactKey: Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk8.overrideController using Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9077e9f645a8509e06f9eeca619203b9') in 0.003928 seconds
+  Import took 0.009063 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.188907 seconds.
-  path: Assets/Agents/woman9/woman9.fbx
-  artifactKey: Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/woman9.fbx using Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0f84cff91c1ff3c226052fb1ae5199') in 0.479475 seconds
-  Import took 0.490080 seconds .
+  Time since last request: 0.099525 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk8.overrideController
+  artifactKey: Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk8.overrideController using Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9077e9f645a8509e06f9eeca619203b9') in 0.003482 seconds
+  Import took 0.008884 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 103.840373 seconds.
-  path: Assets/Agents/woman9/woman9.fbx
-  artifactKey: Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/woman9.fbx using Guid(ab71672ac8dae5a48bfedb02443f306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0d0874f6adbfbb8a78730649d49a25') in 0.324833 seconds
-  Import took 0.333184 seconds .
+  Time since last request: 17.256438 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk9.overrideController
+  artifactKey: Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk9.overrideController using Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de21ba7a61145fcb0abfb0b3b9708c42') in 0.004228 seconds
+  Import took 0.010184 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.185150 seconds.
-  path: Assets/Agents/woman9/Materials
-  artifactKey: Guid(efb5df7118b40ce4e878255348297aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials using Guid(efb5df7118b40ce4e878255348297aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e108c445cf07d59e10e765d64599ecf') in 0.001995 seconds
-  Import took 0.006371 seconds .
+  Time since last request: 0.097261 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk9.overrideController
+  artifactKey: Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk9.overrideController using Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de21ba7a61145fcb0abfb0b3b9708c42') in 0.003366 seconds
+  Import took 0.009344 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006711 seconds.
-  path: Assets/Agents/woman9/Materials/brown_eye.mat
-  artifactKey: Guid(df663d7e058f99f42a1a5b0e9e9934e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/brown_eye.mat using Guid(df663d7e058f99f42a1a5b0e9e9934e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '222ca8acc42444620eb34e46f5f8b427') in 0.009182 seconds
-  Import took 0.013217 seconds .
+  Time since last request: 9.898862 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk10.overrideController
+  artifactKey: Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk10.overrideController using Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33227240453224ebfb11dcca6e34868') in 0.004242 seconds
+  Import took 0.009879 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Agents/woman9/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(46dabb5bf1400cd498b6b71e00718f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/tongue01_diffuse.mat using Guid(46dabb5bf1400cd498b6b71e00718f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48bbee5d0523cf08245c23818c753725') in 0.008543 seconds
-  Import took 0.013164 seconds .
+  Time since last request: 0.101966 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk10.overrideController
+  artifactKey: Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk10.overrideController using Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33227240453224ebfb11dcca6e34868') in 0.003394 seconds
+  Import took 0.009284 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Agents/woman9/Materials/Wool_02_UV_H_CM_1.mat
-  artifactKey: Guid(3c9bb605044b3854abf8586acb7c4468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/Wool_02_UV_H_CM_1.mat using Guid(3c9bb605044b3854abf8586acb7c4468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb9571b1b9a8b94ff7435f851b5d485') in 0.008462 seconds
-  Import took 0.012797 seconds .
+  Time since last request: 12.247547 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk11.overrideController
+  artifactKey: Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk11.overrideController using Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748e145ba6b8a5de6202ec12bcddb7ea') in 0.004645 seconds
+  Import took 0.010977 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/Agents/woman9/Materials/hairtex.mat
-  artifactKey: Guid(0ad755770656ee44d9d8d84d6c37d3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/hairtex.mat using Guid(0ad755770656ee44d9d8d84d6c37d3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7747484cecd9306cf8731cf4f8f74a') in 0.009588 seconds
-  Import took 0.013705 seconds .
+  Time since last request: 0.100023 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk11.overrideController
+  artifactKey: Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk11.overrideController using Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748e145ba6b8a5de6202ec12bcddb7ea') in 0.004489 seconds
+  Import took 0.011268 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Agents/woman9/Materials/eyebrow001.mat
-  artifactKey: Guid(2f9cc26027af76b448fedfc30bbb4184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/eyebrow001.mat using Guid(2f9cc26027af76b448fedfc30bbb4184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537338e76a22de5e03145c3eaecd4bf5') in 0.007918 seconds
-  Import took 0.012484 seconds .
+  Time since last request: 10.889407 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk12.overrideController
+  artifactKey: Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk12.overrideController using Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb96bff7949a26f15e1ad0f9470aec75') in 0.005313 seconds
+  Import took 0.011456 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Agents/woman9/Materials/eyelashes02.mat
-  artifactKey: Guid(d380c14500c0e174b963a4df0dbfb015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/eyelashes02.mat using Guid(d380c14500c0e174b963a4df0dbfb015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72a4e22999b408c807e1a768368efe1') in 0.009049 seconds
-  Import took 0.013552 seconds .
+  Time since last request: 0.096771 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk12.overrideController
+  artifactKey: Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/AnimationControllers/Talk12.overrideController using Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb96bff7949a26f15e1ad0f9470aec75') in 0.003462 seconds
+  Import took 0.008527 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Agents/woman9/Materials/young_lightskinned_female_diffuse2.mat
-  artifactKey: Guid(a994869ada0ac8f48a523dd3029dc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/young_lightskinned_female_diffuse2.mat using Guid(a994869ada0ac8f48a523dd3029dc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05934f53e2910395f8bd419683ad7a05') in 0.011639 seconds
-  Import took 0.016990 seconds .
+  Time since last request: 415.790549 seconds.
+  path: Assets/Animations/Avatars animations
+  artifactKey: Guid(c765deb273c3412439ca0dd2b25008a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations using Guid(c765deb273c3412439ca0dd2b25008a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae179506278e973855f5e5f303f79606') in 0.002904 seconds
+  Import took 0.008483 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Agents/woman9/Materials/teeth.mat
-  artifactKey: Guid(bca20c0fce0bad54dadf87806f5932e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/teeth.mat using Guid(bca20c0fce0bad54dadf87806f5932e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd812ab475afe5cbfb963fe8863e4a4ea') in 0.011715 seconds
-  Import took 0.016169 seconds .
+  Time since last request: 17.959879 seconds.
+  path: Assets/Animations/Avatars animations/talk.anim
+  artifactKey: Guid(1381b14617f1cb0439d41022c6dd0d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/talk.anim using Guid(1381b14617f1cb0439d41022c6dd0d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '581eb23605a54ce104dd5a33629b64a9') in 0.027213 seconds
+  Import took 0.033455 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Agents/woman9/Materials/runningshoes.mat
-  artifactKey: Guid(fb958319436a08149be29e59cee4e985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/runningshoes.mat using Guid(fb958319436a08149be29e59cee4e985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e536ac787f31f259077267c8175fb3c2') in 0.011831 seconds
-  Import took 0.016701 seconds .
+  Time since last request: 30.934073 seconds.
+  path: Assets/Animations/Avatars animations/talk5.anim
+  artifactKey: Guid(1f2fef2cdb5e90741aaa1523cf6c6e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/talk5.anim using Guid(1f2fef2cdb5e90741aaa1523cf6c6e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42086b1e9ddd3ea616114345811de252') in 0.029557 seconds
+  Import took 0.035060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Agents/woman9/Materials/motorcyclepants.mat
-  artifactKey: Guid(1dfb11682a3b8ab4998be31599ca56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/motorcyclepants.mat using Guid(1dfb11682a3b8ab4998be31599ca56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9883eb4169fcf88f4e8009148d20a5c') in 0.014481 seconds
-  Import took 0.018935 seconds .
+  Time since last request: 0.930783 seconds.
+  path: Assets/Animations/Avatars animations/talk6.anim
+  artifactKey: Guid(28f51342117c8a341b6656b12bafb0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/talk6.anim using Guid(28f51342117c8a341b6656b12bafb0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9caa380067df19ab463b39690c1f9b') in 0.024078 seconds
+  Import took 0.029956 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Agents/woman9/Materials/denim_jacket.mat
-  artifactKey: Guid(579d2b24bf5613b418874aa5f950427c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman9/Materials/denim_jacket.mat using Guid(579d2b24bf5613b418874aa5f950427c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6696af0bd6c6ae1d11025c1b883bf25') in 0.013974 seconds
-  Import took 0.018476 seconds .
+  Time since last request: 36.899921 seconds.
+  path: Assets/Animations/Avatars animations/Animator4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769f3026fb9ed0c1e04c08cd09d5b5c7') in 0.044453 seconds
+  Import took 0.049970 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 50.836105 seconds.
-  path: Assets/Agents/woman7/woman7.fbx
-  artifactKey: Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/woman7.fbx using Guid(a5bc0cb283db29d439af0c20871c2fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664dd0489277f8ef15ea41239b288a1f') in 0.290385 seconds
-  Import took 0.297714 seconds .
+  Time since last request: 0.056172 seconds.
+  path: Assets/Animations/Avatars animations/Animator4.overrideController
+  artifactKey: Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator4.overrideController using Guid(5f6b2a577465d2c4e9a2f78ac3cef201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769f3026fb9ed0c1e04c08cd09d5b5c7') in 0.046253 seconds
+  Import took 0.053176 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.515264 seconds.
-  path: Assets/Agents/woman7/Materials
-  artifactKey: Guid(fbb2a171bc6f11240ac42916a5b9d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials using Guid(fbb2a171bc6f11240ac42916a5b9d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d72beb5f7d1ce5850571fe9fb97a81') in 0.001933 seconds
-  Import took 0.006636 seconds .
+  Time since last request: 10.768740 seconds.
+  path: Assets/Animations/Avatars animations/Animator5.overrideController
+  artifactKey: Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator5.overrideController using Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6ae6e01475ea714727f916aed21098') in 0.053235 seconds
+  Import took 0.059351 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005483 seconds.
-  path: Assets/Agents/woman7/Materials/afro_diffuse.mat
-  artifactKey: Guid(1772bada161d6f643be8cd9356cdc646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/afro_diffuse.mat using Guid(1772bada161d6f643be8cd9356cdc646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c53e1d97e021b544d85a68a4a93636') in 0.010510 seconds
-  Import took 0.015594 seconds .
+  Time since last request: 0.050472 seconds.
+  path: Assets/Animations/Avatars animations/Animator5.overrideController
+  artifactKey: Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator5.overrideController using Guid(c88028d37a4b78d4bab48cf0dd9f9f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6ae6e01475ea714727f916aed21098') in 0.051941 seconds
+  Import took 0.057378 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Agents/woman7/Materials/eyelashes02.mat
-  artifactKey: Guid(1dd554722b8344a42a62acb6c7d92483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/eyelashes02.mat using Guid(1dd554722b8344a42a62acb6c7d92483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec1e64f8bfc3bd346b43c8b3b2162b4') in 0.007593 seconds
-  Import took 0.011547 seconds .
+  Time since last request: 15.488519 seconds.
+  path: Assets/Animations/Avatars animations/Animator6.overrideController
+  artifactKey: Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator6.overrideController using Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a5c06b7d23b9f72e2b9ba12db9a602') in 0.051994 seconds
+  Import took 0.059136 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/Agents/woman7/Materials/eyebrow001.mat
-  artifactKey: Guid(9fbdef757351a2e44897db00c37117e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/eyebrow001.mat using Guid(9fbdef757351a2e44897db00c37117e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d2b47b55b12543d2500f2ecfe8c585') in 0.010484 seconds
-  Import took 0.014260 seconds .
+  Time since last request: 0.047519 seconds.
+  path: Assets/Animations/Avatars animations/Animator6.overrideController
+  artifactKey: Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator6.overrideController using Guid(b6e8be0ed758f674badf6e6727c77154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a5c06b7d23b9f72e2b9ba12db9a602') in 0.042138 seconds
+  Import took 0.048730 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Agents/woman7/Materials/tennisshoes.mat
-  artifactKey: Guid(97f2ab72fd9f33b4c92800d5f8c58c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/tennisshoes.mat using Guid(97f2ab72fd9f33b4c92800d5f8c58c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae926fef31db3ef5b84334d9a697522') in 0.012792 seconds
-  Import took 0.016528 seconds .
+  Time since last request: 6.999017 seconds.
+  path: Assets/Animations/Avatars animations/Animator7.overrideController
+  artifactKey: Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator7.overrideController using Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46010dee38aa9917890699444db2578a') in 0.045603 seconds
+  Import took 0.051142 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Agents/woman7/Materials/teeth.mat
-  artifactKey: Guid(0502b59357a74e940997f6038dd2f05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/teeth.mat using Guid(0502b59357a74e940997f6038dd2f05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cda3433ea3ae1dedc7cf888fa1bcb0') in 0.009553 seconds
-  Import took 0.013318 seconds .
+  Time since last request: 0.065512 seconds.
+  path: Assets/Animations/Avatars animations/Animator7.overrideController
+  artifactKey: Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator7.overrideController using Guid(a000893901fca5c48bdf6b8963da99c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46010dee38aa9917890699444db2578a') in 0.044034 seconds
+  Import took 0.049346 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Agents/woman7/Materials/young_darkskinned_female_diffuse.mat
-  artifactKey: Guid(42ce110e07cf1c249af80ff77543bcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/young_darkskinned_female_diffuse.mat using Guid(42ce110e07cf1c249af80ff77543bcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59c4f9e8c53859b8ebe7fc2481261bb') in 0.009017 seconds
-  Import took 0.012649 seconds .
+  Time since last request: 9.709051 seconds.
+  path: Assets/Animations/Avatars animations/Animator8.overrideController
+  artifactKey: Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator8.overrideController using Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f045e03ece271092c0cb2f32b1daf69') in 0.047772 seconds
+  Import took 0.054538 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Agents/woman7/Materials/tightjeans.mat
-  artifactKey: Guid(d23d53271fb74554a93c25e7cf0d13b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/tightjeans.mat using Guid(d23d53271fb74554a93c25e7cf0d13b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29da412b5c1d6bc045d1d308bd41e5f') in 0.014177 seconds
-  Import took 0.018099 seconds .
+  Time since last request: 0.053240 seconds.
+  path: Assets/Animations/Avatars animations/Animator8.overrideController
+  artifactKey: Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator8.overrideController using Guid(8499f9f8acae63c4a818d2275285e31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f045e03ece271092c0cb2f32b1daf69') in 0.037587 seconds
+  Import took 0.042906 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Agents/woman7/Materials/short_tail_camo_tee_diff.mat
-  artifactKey: Guid(288dc68a648891146bc555c497f97b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/short_tail_camo_tee_diff.mat using Guid(288dc68a648891146bc555c497f97b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371ee7f22f5681ba0596e40a19967356') in 0.011862 seconds
-  Import took 0.015910 seconds .
+  Time since last request: 6.503418 seconds.
+  path: Assets/Animations/Avatars animations/Animator9.overrideController
+  artifactKey: Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator9.overrideController using Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9d87e61551cf9157f5574d8c26c4f5') in 0.051072 seconds
+  Import took 0.056854 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Agents/woman7/Materials/brown_eye.mat
-  artifactKey: Guid(e9038fe1fe60b264f8f34ec8bb7ee243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/brown_eye.mat using Guid(e9038fe1fe60b264f8f34ec8bb7ee243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ee680cb2fefec6528ed83fb576df9e') in 0.009094 seconds
-  Import took 0.013006 seconds .
+  Time since last request: 0.050729 seconds.
+  path: Assets/Animations/Avatars animations/Animator9.overrideController
+  artifactKey: Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator9.overrideController using Guid(47a0cd1246f7dda4eab938cc247cbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9d87e61551cf9157f5574d8c26c4f5') in 0.049523 seconds
+  Import took 0.054729 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Agents/woman7/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(18b91a4ebf96a7344b3626b51f4fc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/tongue01_diffuse.mat using Guid(18b91a4ebf96a7344b3626b51f4fc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3059a66ae679142c0bbec837a74c8be') in 0.007465 seconds
-  Import took 0.010990 seconds .
+  Time since last request: 7.973631 seconds.
+  path: Assets/Animations/Avatars animations/Animator10.overrideController
+  artifactKey: Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator10.overrideController using Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9161dd902ec2020200f1265caace1bc') in 0.047876 seconds
+  Import took 0.053958 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Agents/woman7/Materials/short_tail_camo_tee_diff.mat
-  artifactKey: Guid(288dc68a648891146bc555c497f97b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/short_tail_camo_tee_diff.mat using Guid(288dc68a648891146bc555c497f97b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371ee7f22f5681ba0596e40a19967356') in 0.011742 seconds
-  Import took 0.015791 seconds .
+  Time since last request: 0.056707 seconds.
+  path: Assets/Animations/Avatars animations/Animator10.overrideController
+  artifactKey: Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator10.overrideController using Guid(e9ab6895d44c3a242a8c4b53ba6f8670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9161dd902ec2020200f1265caace1bc') in 0.048771 seconds
+  Import took 0.054137 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Agents/woman7/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(18b91a4ebf96a7344b3626b51f4fc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman7/Materials/tongue01_diffuse.mat using Guid(18b91a4ebf96a7344b3626b51f4fc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3059a66ae679142c0bbec837a74c8be') in 0.007583 seconds
-  Import took 0.011298 seconds .
+  Time since last request: 6.875205 seconds.
+  path: Assets/Animations/Avatars animations/Animator11.overrideController
+  artifactKey: Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator11.overrideController using Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b44f3b64f49d61e89e5d07ec622000') in 0.043028 seconds
+  Import took 0.048331 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.323248 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4644d0df35aa9a41b52eaac1d3d92d96') in 0.303643 seconds
-  Import took 0.311843 seconds .
+  Time since last request: 0.061264 seconds.
+  path: Assets/Animations/Avatars animations/Animator11.overrideController
+  artifactKey: Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator11.overrideController using Guid(f37efdde08de9a34fae7579433c9c357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b44f3b64f49d61e89e5d07ec622000') in 0.046292 seconds
+  Import took 0.051637 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.342858 seconds.
-  path: Assets/Agents/woman6/Materials
-  artifactKey: Guid(ed0441f4bd5a0fc48b7c8bb6f62cfbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials using Guid(ed0441f4bd5a0fc48b7c8bb6f62cfbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ccbb754659088acded02c60d06f42a') in 0.002644 seconds
-  Import took 0.006602 seconds .
+  Time since last request: 7.209506 seconds.
+  path: Assets/Animations/Avatars animations/Animator12.overrideController
+  artifactKey: Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator12.overrideController using Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5eb826a493e3beb22bca6378e2c4f35') in 0.052335 seconds
+  Import took 0.058723 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005669 seconds.
-  path: Assets/Agents/woman6/Materials/brown_eye.mat
-  artifactKey: Guid(46ff94273839ed74a8570e369176e995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/brown_eye.mat using Guid(46ff94273839ed74a8570e369176e995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b973e6dc21ffb1786f8008e274417bfb') in 0.008495 seconds
-  Import took 0.013181 seconds .
+  Time since last request: 0.050545 seconds.
+  path: Assets/Animations/Avatars animations/Animator12.overrideController
+  artifactKey: Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator12.overrideController using Guid(ded6e53d7edd67741937e58f9ee6bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5eb826a493e3beb22bca6378e2c4f35') in 0.051223 seconds
+  Import took 0.056876 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Agents/woman6/Materials/young_lightskinned_female_diffuse.mat
-  artifactKey: Guid(f1af28e29835e3f4384c6212764c93c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/young_lightskinned_female_diffuse.mat using Guid(f1af28e29835e3f4384c6212764c93c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4a1356030b2f320b9e2fc4e029c264') in 0.009029 seconds
-  Import took 0.013525 seconds .
+  Time since last request: 111.345189 seconds.
+  path: Assets/Animations/Avatars animations/Animator0.controller
+  artifactKey: Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/Animator0.controller using Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca0560f1c300fbb7a71adddb508c1a4') in 0.027335 seconds
+  Import took 0.033537 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Agents/woman6/Materials/runningshoes.mat
-  artifactKey: Guid(49f839c55b5a5bd48bc91beaf1ed0fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/runningshoes.mat using Guid(49f839c55b5a5bd48bc91beaf1ed0fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b895e32b4844f461ecccf9f150ab79') in 0.012484 seconds
-  Import took 0.017531 seconds .
+  Time since last request: 50.235548 seconds.
+  path: Assets/Animations/Avatars animations/AnimatorWalkTalk.controller
+  artifactKey: Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Avatars animations/AnimatorWalkTalk.controller using Guid(682f79f9cbf9b9a4cb2352408a63e580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93cf4db01ec704a00111d0cb0621d2e') in 0.030838 seconds
+  Import took 0.037622 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Agents/woman6/Materials/shortjeans.mat
-  artifactKey: Guid(e2db330085ddc294b9c789e3cd8d399f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/shortjeans.mat using Guid(e2db330085ddc294b9c789e3cd8d399f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc041c052f95e85e37de5264137ed005') in 0.012669 seconds
-  Import took 0.016369 seconds .
+  Time since last request: 120.560904 seconds.
+  path: Assets/Animations/Facial animations
+  artifactKey: Guid(c765deb273c3412439ca0dd2b25008a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations using Guid(c765deb273c3412439ca0dd2b25008a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1628e5545ec323b1d0116aa9d82e243b') in 0.010757 seconds
+  Import took 0.017827 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Agents/woman6/Materials/sleeveless.mat
-  artifactKey: Guid(c18161e671de9de4897a58ecdc89f409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/sleeveless.mat using Guid(c18161e671de9de4897a58ecdc89f409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6c289623af8408d5e8305d23982b20') in 0.012104 seconds
-  Import took 0.015687 seconds .
+  Time since last request: 312.798640 seconds.
+  path: Assets/Scripts/HeadController.cs
+  artifactKey: Guid(67bd1aa03668947c2a3fd1f53d831efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/HeadController.cs using Guid(67bd1aa03668947c2a3fd1f53d831efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bc4265df87277ab8b0845cf3dfcc20') in 0.009454 seconds
+  Import took 0.015018 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Agents/woman6/Materials/hair_05.mat
-  artifactKey: Guid(fc3bd41f653b55b45bf2e218b057d6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/hair_05.mat using Guid(fc3bd41f653b55b45bf2e218b057d6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79e4724be0d4538260391af9eb0d4e8') in 0.008551 seconds
-  Import took 0.012523 seconds .
+  Time since last request: 0.031940 seconds.
+  path: Assets/Scripts/HeadController.cs
+  artifactKey: Guid(67bd1aa03668947c2a3fd1f53d831efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/HeadController.cs using Guid(67bd1aa03668947c2a3fd1f53d831efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bc4265df87277ab8b0845cf3dfcc20') in 0.003904 seconds
+  Import took 0.010287 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Agents/woman6/Materials/teeth.mat
-  artifactKey: Guid(fd23d9e4255929a45a33e9141caf5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/teeth.mat using Guid(fd23d9e4255929a45a33e9141caf5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc82469b2e857a93d7204df9b5af24f1') in 0.009771 seconds
-  Import took 0.013593 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009367 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.517 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Agents/woman6/Materials/eyelashes02.mat
-  artifactKey: Guid(09ce568ba31821c41b1d7e41218c9beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/eyelashes02.mat using Guid(09ce568ba31821c41b1d7e41218c9beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48bf5a7ce02f95706746a793a3e1ddd') in 0.006788 seconds
-  Import took 0.010681 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2950.
+Total: 4.350200 ms (FindLiveObjects: 0.425100 ms CreateObjectMapping: 0.167200 ms MarkObjects: 3.657000 ms  DeleteObjects: 0.098900 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Agents/woman6/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(7e497cb27c116834180bf97dfa15f303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/tongue01_diffuse.mat using Guid(7e497cb27c116834180bf97dfa15f303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ddc8bcb04ad782dfabbe96ad24e9d8') in 0.007841 seconds
-  Import took 0.011503 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008862 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.516 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/Agents/woman6/Materials/eyebrow001.mat
-  artifactKey: Guid(7a1c7f18e6f05b849905a971219aec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/Materials/eyebrow001.mat using Guid(7a1c7f18e6f05b849905a971219aec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a0dd9d8ac92884fc01f9b87fab9781') in 0.007155 seconds
-  Import took 0.011870 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2954.
+Total: 4.648700 ms (FindLiveObjects: 0.443300 ms CreateObjectMapping: 0.161100 ms MarkObjects: 3.942300 ms  DeleteObjects: 0.099800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.579843 seconds.
-  path: Assets/Agents/woman6/woman6.fbx
-  artifactKey: Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman6/woman6.fbx using Guid(155a431b4c3059345b21f146808897ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746552cd4bce3ee42da33b38dc98185f') in 0.343894 seconds
-  Import took 0.350970 seconds .
+  Time since last request: 333.571896 seconds.
+  path: Assets/Animations/Facial animations/AnimatorWalkNoTalk.overrideController
+  artifactKey: Guid(05db0626dbd5a2a4f8413fc8658d4f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/AnimatorWalkNoTalk.overrideController using Guid(05db0626dbd5a2a4f8413fc8658d4f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7baaf17dbf57cf16763ace62789db181') in 0.017421 seconds
+  Import took 0.031949 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 35.867819 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3dc2a4fd4de32326a6357f923e7e2e') in 0.231618 seconds
-  Import took 0.238933 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008952 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.528 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 21.598288 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1606b6ce68d8742f83cdbe37fabd599') in 0.239233 seconds
-  Import took 0.246253 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2958.
+Total: 5.004200 ms (FindLiveObjects: 0.430400 ms CreateObjectMapping: 0.161000 ms MarkObjects: 4.307500 ms  DeleteObjects: 0.102800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.792384 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb4f88321c636c616c1fd2b24e8cd72') in 0.237317 seconds
-  Import took 0.243829 seconds .
+  Time since last request: 235.746669 seconds.
+  path: Assets/Animations/Facial animations/AnimatorWalkNoTalk.controller
+  artifactKey: Guid(a8d483f36759f944b80109605cca1917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/AnimatorWalkNoTalk.controller using Guid(a8d483f36759f944b80109605cca1917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15f897697c9ba844c8075f4d0b26e81') in 0.044246 seconds
+  Import took 0.050483 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 17.394452 seconds.
-  path: Assets/Agents/woman5/woman5.fbx
-  artifactKey: Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/woman5.fbx using Guid(509a9c04821d362489703612ab4c2bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19dde19c49078c7c073cd926e6b1919') in 0.191571 seconds
-  Import took 0.198716 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008706 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.536 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.17 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 1.222230 seconds.
-  path: Assets/Agents/woman5/Materials
-  artifactKey: Guid(08b875844a1ecf44da58a2bb697c9211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials using Guid(08b875844a1ecf44da58a2bb697c9211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0fbe0ad7c5892a8625c4e4389ac8b30') in 0.002049 seconds
-  Import took 0.006108 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2962.
+Total: 5.130400 ms (FindLiveObjects: 0.450900 ms CreateObjectMapping: 0.162200 ms MarkObjects: 4.420600 ms  DeleteObjects: 0.094200 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.007601 seconds.
-  path: Assets/Agents/woman5/Materials/Black_trans.mat
-  artifactKey: Guid(dd06b32dd4d41b8498fe96b8000b9222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/Black_trans.mat using Guid(dd06b32dd4d41b8498fe96b8000b9222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15669e133ceb6cd9a6b44cab9ffe5ef') in 0.010141 seconds
-  Import took 0.014354 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009194 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.529 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Agents/woman5/Materials/ShiftDress.mat
-  artifactKey: Guid(6759db8763370c44894bcc0bbce583ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/ShiftDress.mat using Guid(6759db8763370c44894bcc0bbce583ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3b1e11e7a1be6ab261ea8f33958ff5') in 0.010105 seconds
-  Import took 0.014448 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2966.
+Total: 5.406100 ms (FindLiveObjects: 0.438800 ms CreateObjectMapping: 0.166600 ms MarkObjects: 4.603700 ms  DeleteObjects: 0.194200 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Agents/woman5/Materials/young_lightskinned_female_diffuse3.mat
-  artifactKey: Guid(b586028f95468af4e82a23b954ffb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/young_lightskinned_female_diffuse3.mat using Guid(b586028f95468af4e82a23b954ffb174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a0390217539e06779d14040e11f6fd') in 0.010320 seconds
-  Import took 0.014682 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009122 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.12 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Agents/woman5/Materials/braid01_diffuse_brightginger.mat
-  artifactKey: Guid(3642a7d873855a94dab9167d0b82d521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/braid01_diffuse_brightginger.mat using Guid(3642a7d873855a94dab9167d0b82d521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ff11f33600f34c9ddd967fc81fade7') in 0.011072 seconds
-  Import took 0.015475 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2970.
+Total: 3.795100 ms (FindLiveObjects: 0.346200 ms CreateObjectMapping: 0.117100 ms MarkObjects: 3.234300 ms  DeleteObjects: 0.095900 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/Agents/woman5/Materials/eyelashes03.mat
-  artifactKey: Guid(6cd0e1a2b662d8a4e84b97d35a4dfe45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/eyelashes03.mat using Guid(6cd0e1a2b662d8a4e84b97d35a4dfe45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25157cb5e92a7aa3988fe9381724086') in 0.008421 seconds
-  Import took 0.012433 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009556 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.513 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Agents/woman5/Materials/MJ-shoes3.mat
-  artifactKey: Guid(8713118018e16c34291d454765d8bf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/MJ-shoes3.mat using Guid(8713118018e16c34291d454765d8bf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0ad6e81223d65c9deb1e98ca7937db') in 0.012008 seconds
-  Import took 0.016145 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2974.
+Total: 3.844600 ms (FindLiveObjects: 0.303800 ms CreateObjectMapping: 0.091200 ms MarkObjects: 3.346200 ms  DeleteObjects: 0.101800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Agents/woman5/Materials/teeth.mat
-  artifactKey: Guid(0329b74e57bde04419f0820da8d223b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/teeth.mat using Guid(0329b74e57bde04419f0820da8d223b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8745fb29275ffb90b4ac767aafaaf94') in 0.010435 seconds
-  Import took 0.014776 seconds .
+  Time since last request: 2957.456341 seconds.
+  path: Assets/Animations/Facial animations/blink1.anim
+  artifactKey: Guid(58cffa0c8c145b947bba5e292c051753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/blink1.anim using Guid(58cffa0c8c145b947bba5e292c051753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2f70463bfd2c07594e2e3430da21fe') in 0.019193 seconds
+  Import took 0.026586 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Agents/woman5/Materials/eyebrow001.mat
-  artifactKey: Guid(2c7f4e380aaa6a3479fa4d3546f53722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/eyebrow001.mat using Guid(2c7f4e380aaa6a3479fa4d3546f53722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b6a032f534ccffe4de45eedad6b164') in 0.011208 seconds
-  Import took 0.015028 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.528 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Agents/woman5/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(9abdc41fba321794d9bff0489e78c6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/tongue01_diffuse.mat using Guid(9abdc41fba321794d9bff0489e78c6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4e74b0502b3d74c89f453c83834c11') in 0.007642 seconds
-  Import took 0.011269 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2978.
+Total: 4.387600 ms (FindLiveObjects: 0.408600 ms CreateObjectMapping: 0.163900 ms MarkObjects: 3.715000 ms  DeleteObjects: 0.098300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Agents/woman5/Materials/brown_eye.mat
-  artifactKey: Guid(44142b910b7e4dc43b81e8febb541e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/woman5/Materials/brown_eye.mat using Guid(44142b910b7e4dc43b81e8febb541e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c68c4c50a7b21959eb0d9494e247e6') in 0.009012 seconds
-  Import took 0.012937 seconds .
+  Time since last request: 410.577790 seconds.
+  path: Assets/Agents/blink1.anim
+  artifactKey: Guid(f989b1b145706224586494f2d30be388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/blink1.anim using Guid(f989b1b145706224586494f2d30be388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5398eba5081482efc9db0a01aee38744') in 0.017435 seconds
+  Import took 0.024432 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.084068 seconds.
-  path: Assets/Agents/male9/male9.fbx
-  artifactKey: Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male9/male9.fbx using Guid(36a97cfcfb8acd1469375b4218e6e1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf2a17fe1a3ea269700edebc7be8be5') in 0.265289 seconds
-  Import took 0.271919 seconds .
+  Time since last request: 23.518739 seconds.
+  path: Assets/Agents/woman3/woman3.fbx
+  artifactKey: Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman3/woman3.fbx using Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde14596cad4fe3deade1e2d50b5ecca') in 0.533279 seconds
+  Import took 0.542844 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 47.349138 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764cf10d741ec53e42d2248e0e1d00f5') in 0.224295 seconds
-  Import took 0.230980 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.500 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 31.660341 seconds.
-  path: Assets/Agents/male8/male8.fbx
-  artifactKey: Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/male8.fbx using Guid(d9c0306f37c94904ba1120613150d7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcb6e71991ab362b2392a77a0d7d799') in 0.171460 seconds
-  Import took 0.178065 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2983.
+Total: 4.146400 ms (FindLiveObjects: 0.446700 ms CreateObjectMapping: 0.172700 ms MarkObjects: 3.428100 ms  DeleteObjects: 0.096300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.111851 seconds.
-  path: Assets/Agents/male8/Materials
-  artifactKey: Guid(5f0ad1daa0f5d70469a92f5a19710a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials using Guid(5f0ad1daa0f5d70469a92f5a19710a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff556ee76930f6aa2135b58f58ec0448') in 0.002279 seconds
-  Import took 0.006522 seconds .
+  Time since last request: 336.609760 seconds.
+  path: Assets/Agents/woman3/woman3.fbx
+  artifactKey: Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman3/woman3.fbx using Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121257374d5317dd897c4f1216746db5') in 0.377385 seconds
+  Import took 0.386340 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008069 seconds.
-  path: Assets/Agents/male8/Materials/brown_eye.mat
-  artifactKey: Guid(fc515592eecb31a449eb77c659f7618b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/brown_eye.mat using Guid(fc515592eecb31a449eb77c659f7618b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990bc98efc3cdac89b665e3425e112ce') in 0.009496 seconds
-  Import took 0.013974 seconds .
+  Time since last request: 8.713720 seconds.
+  path: Assets/Agents/woman3/woman3.fbx
+  artifactKey: Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/woman3/woman3.fbx using Guid(2163e3bf4f75745a4a9293b7e723ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121257374d5317dd897c4f1216746db5') in 0.276760 seconds
+  Import took 0.285337 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Agents/male8/Materials/shoes03_diffuse.mat
-  artifactKey: Guid(76e9a4345c16bc44eba9549e521ceb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/shoes03_diffuse.mat using Guid(76e9a4345c16bc44eba9549e521ceb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcd8a11d09c7101fe1970d64b5e721a') in 0.008405 seconds
-  Import took 0.013110 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.21 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.3 MB.
+System memory in use after: 203.5 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Agents/male8/Materials/maxhairtex6.mat
-  artifactKey: Guid(84c130793a55e704c86c447cd5e2ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/maxhairtex6.mat using Guid(84c130793a55e704c86c447cd5e2ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e4e76bf690b4e3b2fb263bd86223a9') in 0.013647 seconds
-  Import took 0.017797 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2988.
+Total: 4.299800 ms (FindLiveObjects: 0.393200 ms CreateObjectMapping: 0.093900 ms MarkObjects: 3.712600 ms  DeleteObjects: 0.098000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Agents/male8/Materials/male_casualsuit05_diffuse.mat
-  artifactKey: Guid(ae632d067d442e34289457e0fabc11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/male_casualsuit05_diffuse.mat using Guid(ae632d067d442e34289457e0fabc11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5555c7bf04503a158c4a494b01efeef') in 0.012719 seconds
-  Import took 0.017021 seconds .
+  Time since last request: 67.691418 seconds.
+  path: Assets/Animations/Facial animations/AnimatorWalkNoTalk.controller
+  artifactKey: Guid(a8d483f36759f944b80109605cca1917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/AnimatorWalkNoTalk.controller using Guid(a8d483f36759f944b80109605cca1917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0e8c7e6e8694d1774a72f1bac073bf') in 0.021298 seconds
+  Import took 0.028588 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Agents/male8/Materials/eyebrow001.mat
-  artifactKey: Guid(f518dc2d6cf05f346b16f1da363485aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/eyebrow001.mat using Guid(f518dc2d6cf05f346b16f1da363485aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f47648624391bf781788711483d6b02') in 0.008116 seconds
-  Import took 0.012839 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009034 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.537 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Agents/male8/Materials/middleage_lightskinned_male_diffuse2.mat
-  artifactKey: Guid(7cbba37e293bee44f9c8bc6b86bb1e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/middleage_lightskinned_male_diffuse2.mat using Guid(7cbba37e293bee44f9c8bc6b86bb1e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010204c2bb0666bde1b13741c1f3d165') in 0.011454 seconds
-  Import took 0.015671 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 4.073900 ms (FindLiveObjects: 0.309400 ms CreateObjectMapping: 0.091700 ms MarkObjects: 3.571500 ms  DeleteObjects: 0.100000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Agents/male8/Materials/teeth.mat
-  artifactKey: Guid(c5978ace3bbc0f145923a06f7c7e1441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/teeth.mat using Guid(c5978ace3bbc0f145923a06f7c7e1441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2937f8010a02d0280fe35c43079d3ffe') in 0.010827 seconds
-  Import took 0.014791 seconds .
+  Time since last request: 60.710437 seconds.
+  path: Assets/Animations/Facial animations/AnimatorWalkNoTalk1.overrideController
+  artifactKey: Guid(4e781c1c42f5f414aa14fc52c271613c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/AnimatorWalkNoTalk1.overrideController using Guid(4e781c1c42f5f414aa14fc52c271613c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fa389e558c904f4e2cc594d730c4aa') in 0.019722 seconds
+  Import took 0.026947 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Agents/male8/Materials/middleage_lightskinned_male_diffuse2.mat
-  artifactKey: Guid(7cbba37e293bee44f9c8bc6b86bb1e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/middleage_lightskinned_male_diffuse2.mat using Guid(7cbba37e293bee44f9c8bc6b86bb1e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010204c2bb0666bde1b13741c1f3d165') in 0.009615 seconds
-  Import took 0.013753 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008654 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.541 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2376 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.5 MB.
+System memory in use after: 203.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Agents/male8/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(c78bf161ab0992c4890785cd14db12ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/tongue01_diffuse.mat using Guid(c78bf161ab0992c4890785cd14db12ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53947b28b6b3f70a35c21cf46eaff25d') in 0.008320 seconds
-  Import took 0.012463 seconds .
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2996.
+Total: 4.453500 ms (FindLiveObjects: 0.322800 ms CreateObjectMapping: 0.095300 ms MarkObjects: 3.921100 ms  DeleteObjects: 0.111900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Agents/male8/Materials/teeth.mat
-  artifactKey: Guid(c5978ace3bbc0f145923a06f7c7e1441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/teeth.mat using Guid(c5978ace3bbc0f145923a06f7c7e1441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2937f8010a02d0280fe35c43079d3ffe') in 0.010510 seconds
-  Import took 0.014635 seconds .
+  Time since last request: 520.043676 seconds.
+  path: Assets/Animations/Facial animations/AnimatorWalkNoTalk1.overrideController
+  artifactKey: Guid(4e781c1c42f5f414aa14fc52c271613c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Facial animations/AnimatorWalkNoTalk1.overrideController using Guid(4e781c1c42f5f414aa14fc52c271613c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65387a4a1ca023ae806f7bf7068fbb97') in 0.023601 seconds
+  Import took 0.030162 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Agents/male8/Materials/tongue01_diffuse.mat
-  artifactKey: Guid(c78bf161ab0992c4890785cd14db12ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male8/Materials/tongue01_diffuse.mat using Guid(c78bf161ab0992c4890785cd14db12ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53947b28b6b3f70a35c21cf46eaff25d') in 0.008530 seconds
-  Import took 0.012881 seconds .
+  Time since last request: 32.295590 seconds.
+  path: Assets/Agents/male3
+  artifactKey: Guid(06cf2b6e99e3e429caec93185736215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/male3 using Guid(06cf2b6e99e3e429caec93185736215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf80248edd75bdb362a3e209ec66ac0b') in 0.005073 seconds
+  Import took 0.010674 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 155.536070 seconds.
-  path: Assets/Agents/male7/male7.fbx
-  artifactKey: Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Agents/male7/male7.fbx using Guid(f38ecc073a4f9f64eaf9f17f4ee4e913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0face04746883c23107580b78c15a4') in 0.356350 seconds
-  Import took 0.362836 seconds .
+  Time since last request: 0.095271 seconds.
+  path: Assets/Agents/male3/male3.fbx
+  artifactKey: Guid(bb394f8b6ee1d4c53abcc660a378ecf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/male3/male3.fbx using Guid(bb394f8b6ee1d4c53abcc660a378ecf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e9ca909c427d8caeaaf3753b32af98') in 0.321371 seconds
+  Import took 0.330101 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
