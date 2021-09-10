@@ -33,7 +33,8 @@ public class VRRig : MonoBehaviour
     private Transform vrRightHand;  //right controller
 
     public Transform headConstraint;    
-    public Vector3 headBodyOffset; 
+    public Vector3 headBodyOffset;
+    public bool bodyRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +57,7 @@ public class VRRig : MonoBehaviour
 
         //if the angle between the head rotation on the y axis and the body rotation on the y axis is greater than 90 degrees
         //eulerAngles represents the rotation in world space
-        if (Quaternion.Angle(Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0),
+        if (bodyRotation && Quaternion.Angle(Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0),
                 Quaternion.Euler(0, headConstraint.rotation.eulerAngles.y, 0)) > 90)
         {
             //rotate also the body by projecting the head z axis on the y axis 
