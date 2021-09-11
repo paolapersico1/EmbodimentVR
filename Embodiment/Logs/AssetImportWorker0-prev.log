@@ -1,141 +1,105 @@
 Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'it' Physical Memory: 15741 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/igor/Desktop/EmbodimentVR/Embodiment
+C:/Users/paola/Desktop/EmbodimentVR/Embodiment
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53778
-Successfully changed project path to: /Users/igor/Desktop/EmbodimentVR/Embodiment
-/Users/igor/Desktop/EmbodimentVR/Embodiment
+62661
+Successfully changed project path to: C:/Users/paola/Desktop/EmbodimentVR/Embodiment
+C:/Users/paola/Desktop/EmbodimentVR/Embodiment
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 118.51 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/igor/Desktop/EmbodimentVR/Embodiment/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/paola/Desktop/EmbodimentVR/Embodiment/Assets
 GfxDevice: creating device client; threaded=0
-2021-09-10 09:18:59.587 Unity[1700:64091] (null) preferred device: Apple M1 (high power)
-2021-09-10 09:18:59.587 Unity[1700:64091] Metal devices available: 1
-2021-09-10 09:18:59.587 Unity[1700:64091] 0: Apple M1 (high power)
-2021-09-10 09:18:59.588 Unity[1700:64091] Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.14.7196
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001763 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 55.52 ms, found 2 plugins.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003443 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 96.11 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.860 seconds
+- Completed reload, in  1.641 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004223 seconds.
+Registered in 0.009704 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 49.37 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 91.49 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.058 seconds
+- Completed reload, in  2.734 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2800 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 219.8 MB.
-System memory in use after: 219.6 MB.
+System memory in use before: 210.4 MB.
+System memory in use after: 210.2 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3242.
-Total: 3.201375 ms (FindLiveObjects: 0.297083 ms CreateObjectMapping: 0.064333 ms MarkObjects: 2.595375 ms  DeleteObjects: 0.243167 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Materials/Wall.mat
-  artifactKey: Guid(8617fbb93361dc94699fcb1803b9bcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Wall.mat using Guid(8617fbb93361dc94699fcb1803b9bcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9bd34c76141da93432a28535178366') in 1.065794 seconds
-  Import took 1.071823 seconds .
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3256.
+Total: 4.586300 ms (FindLiveObjects: 0.379000 ms CreateObjectMapping: 0.134200 ms MarkObjects: 3.727400 ms  DeleteObjects: 0.343100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.471265 seconds.
-  path: Assets/Environment/Floor materials pack/Material/Floor_3.mat
-  artifactKey: Guid(8ca93fc0d8ba24547bbd2eacd32a5811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Environment/Floor materials pack/Material/Floor_3.mat using Guid(8ca93fc0d8ba24547bbd2eacd32a5811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662967b71c98655b45b818c8941c01f0') in 0.021523 seconds
-  Import took 0.027265 seconds .
+  path: Assets/Scripts/CameraMovement.cs
+  artifactKey: Guid(220d54949c5854fc59720ab391e08e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraMovement.cs using Guid(220d54949c5854fc59720ab391e08e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f65aef27e541d130b46a710b52838b7') in 0.030996 seconds
+  Import took 0.049485 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010346 seconds.
+Registered in 0.010028 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.557 seconds
+- Completed reload, in  1.618 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.25 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 219.7 MB.
-System memory in use after: 219.6 MB.
+Unloading 2722 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.4 MB.
+System memory in use after: 204.4 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3285.
-Total: 2.574875 ms (FindLiveObjects: 0.232375 ms CreateObjectMapping: 0.066000 ms MarkObjects: 1.740292 ms  DeleteObjects: 0.535542 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 3261.
+Total: 5.353600 ms (FindLiveObjects: 0.549700 ms CreateObjectMapping: 0.276900 ms MarkObjects: 4.193700 ms  DeleteObjects: 0.330700 ms)
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007399 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.645 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 220.3 MB.
-System memory in use after: 220.2 MB.
+Received Import Request.
+  Time since last request: 65.545019 seconds.
+  path: Assets/Scripts/CameraHeight.cs
+  artifactKey: Guid(6b8d4c72725d214429c8ed7c71afef6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraHeight.cs using Guid(6b8d4c72725d214429c8ed7c71afef6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d431e54df99c443f016d5b343271f0a') in 0.014024 seconds
+  Import took 0.022686 seconds .
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3289.
-Total: 2.902208 ms (FindLiveObjects: 0.379291 ms CreateObjectMapping: 0.069292 ms MarkObjects: 2.066375 ms  DeleteObjects: 0.386166 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010647 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.773 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 220.8 MB.
-System memory in use after: 220.7 MB.
-
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3293.
-Total: 5.146000 ms (FindLiveObjects: 0.576875 ms CreateObjectMapping: 0.127667 ms MarkObjects: 4.100292 ms  DeleteObjects: 0.338917 ms)
-
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
