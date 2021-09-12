@@ -31,8 +31,7 @@ public class VRRig : MonoBehaviour
     private Transform vrHead;   //camera
     private Transform vrLeftHand;   //left controller
     private Transform vrRightHand;  //right controller
-
-    public Transform headConstraint;    
+  
     public Vector3 headBodyOffset;
     public bool bodyRotation = true;
     public int rotThreshold = 10;
@@ -47,13 +46,13 @@ public class VRRig : MonoBehaviour
         vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
 
         //difference in position between the avatar head and the avatar body
-        headBodyOffset = transform.position - headConstraint.position;
+        headBodyOffset = transform.position - head.rigTarget.position;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = headConstraint.position + headBodyOffset;
+        transform.position = head.rigTarget.position + headBodyOffset;
 
 
         //if the angle between the head rotation on the y axis and the body rotation on the y axis is greater than 90 degrees
@@ -67,7 +66,7 @@ public class VRRig : MonoBehaviour
         {
             //rotate also the body by projecting the head z axis on the y axis 
             //linear interpolation with the previous position is used to smooth the movement
-            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.forward, Vector3.up).normalized,
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(head.rigTarget.forward, Vector3.up).normalized,
                                         Time.deltaTime * turnSmoothness);
         }
 
