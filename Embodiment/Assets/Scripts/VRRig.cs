@@ -34,7 +34,8 @@ public class VRRig : MonoBehaviour
 
     public Transform headConstraint;    
     public Vector3 headBodyOffset;
-    public bool bodyRotation;
+    public bool bodyRotation = true;
+    public int rotThreshold = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -57,8 +58,12 @@ public class VRRig : MonoBehaviour
 
         //if the angle between the head rotation on the y axis and the body rotation on the y axis is greater than 90 degrees
         //eulerAngles represents the rotation in world space
-        if (bodyRotation && Quaternion.Angle(Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0),
-                Quaternion.Euler(0, headConstraint.rotation.eulerAngles.y, 0)) > 90)
+        float headTorsoRotation = RotationDifference(transform, head.rigTarget);
+        float leftHandTorsoRotation = RotationDifference(transform, leftHand.rigTarget);
+        float rightHandTorsoRotation = RotationDifference(transform, rightHand.rigTarget);
+        if (bodyRotation &&
+            Mathf.Abs(headTorsoRotation - leftHandTorsoRotation) < rotThreshold &&
+            Mathf.Abs(headTorsoRotation - rightHandTorsoRotation) < rotThreshold)
         {
             //rotate also the body by projecting the head z axis on the y axis 
             //linear interpolation with the previous position is used to smooth the movement
@@ -70,5 +75,11 @@ public class VRRig : MonoBehaviour
         head.Map(vrHead);
         leftHand.Map(vrLeftHand);
         rightHand.Map(vrRightHand);
+    }
+
+    private float RotationDifference(Transform firstTransform, Transform secondTransform)
+    {
+        return Quaternion.Angle(Quaternion.Euler(0, firstTransform.rotation.eulerAngles.y, 0),
+                Quaternion.Euler(0, secondTransform.rotation.eulerAngles.y, 0));
     }
 }
