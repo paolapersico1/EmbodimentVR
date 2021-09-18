@@ -1,0 +1,181 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/igor/Desktop/EmbodimentVR/Embodiment
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61875
+Successfully changed project path to: /Users/igor/Desktop/EmbodimentVR/Embodiment
+/Users/igor/Desktop/EmbodimentVR/Embodiment
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 164.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/igor/Desktop/EmbodimentVR/Embodiment/Assets
+GfxDevice: creating device client; threaded=0
+2021-09-15 16:32:45.336 Unity[23707:1308753] (null) preferred device: Apple M1 (high power)
+2021-09-15 16:32:45.336 Unity[23707:1308753] Metal devices available: 1
+2021-09-15 16:32:45.336 Unity[23707:1308753] 0: Apple M1 (high power)
+2021-09-15 16:32:45.339 Unity[23707:1308753] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56707
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001086 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 63.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.289 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005029 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 62.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.144 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2803 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.0 MB.
+System memory in use after: 223.9 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3246.
+Total: 3.209042 ms (FindLiveObjects: 0.365708 ms CreateObjectMapping: 0.069667 ms MarkObjects: 2.445000 ms  DeleteObjects: 0.327667 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Environment/DoorPackFree/Meshes/Door001/Materials/13 - Default.mat
+  artifactKey: Guid(c466dd5ca45af4e938f7f164818ddfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/DoorPackFree/Meshes/Door001/Materials/13 - Default.mat using Guid(c466dd5ca45af4e938f7f164818ddfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9bc1ce6c6b85ab7272e8bab062cd48') in 1.000864 seconds
+  Import took 1.007831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Environment/DoorPackFree/Meshes/Video intercom/Textures/V2/Aferar_01 - Default_AlbedoTransparency.png
+  artifactKey: Guid(c2eace534e1967048bf8fdc65389e7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/DoorPackFree/Meshes/Video intercom/Textures/V2/Aferar_01 - Default_AlbedoTransparency.png using Guid(c2eace534e1967048bf8fdc65389e7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54eac96ba03ec395e529931f270c456e') in 0.612029 seconds
+  Import took 0.617921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/SteamVR/Prefabs/[CameraRig].prefab
+  artifactKey: Guid(4d293c8e162f3874b982baadd71153d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Prefabs/[CameraRig].prefab using Guid(4d293c8e162f3874b982baadd71153d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6720cb29b6a9cc158dae029cdb5c9739') in 0.313011 seconds
+  Import took 0.320016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000929 seconds.
+  path: Assets/Agents/Models/woman8/textures/3tex1.png
+  artifactKey: Guid(04f9cb25656d466488adc67f36fea9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/Models/woman8/textures/3tex1.png using Guid(04f9cb25656d466488adc67f36fea9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0b126b0873b62d6dc23337fdc6be29') in 0.015715 seconds
+  Import took 0.021508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Environment/DoorPackFree/Meshes/Video intercom/Materials/01 - Default.mat
+  artifactKey: Guid(f58626f491d9c435aa9ea29f19288ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/DoorPackFree/Meshes/Video intercom/Materials/01 - Default.mat using Guid(f58626f491d9c435aa9ea29f19288ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcde676bf6d2da2d3741fd021cbcf53') in 0.011717 seconds
+  Import took 0.016572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002734 seconds.
+  path: Assets/Environment/Socket Pack/Models/Sockets.FBX
+  artifactKey: Guid(6d5556adba5ba8f438bf6df4874c0f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Socket Pack/Models/Sockets.FBX using Guid(6d5556adba5ba8f438bf6df4874c0f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5907fcd00e1c868b2b3f0b15c403dc') in 0.417150 seconds
+  Import took 0.424539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/SteamVR/Prefabs/[SteamVR].prefab
+  artifactKey: Guid(4f35fa249b5008c44ac2998be6f82d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Prefabs/[SteamVR].prefab using Guid(4f35fa249b5008c44ac2998be6f82d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b500622bc81f6a29f9ee26e98dd1a6') in 0.005608 seconds
+  Import took 0.010197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/SteamVR/Icon/_steamvr.png
+  artifactKey: Guid(200a36575873a1d40baa790e18dafe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Icon/_steamvr.png using Guid(200a36575873a1d40baa790e18dafe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b96e44ab58b9cba4c0f1b8fb02b807') in 0.006552 seconds
+  Import took 0.011692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Environment/Socket Pack/Models/Fuse_Box.FBX
+  artifactKey: Guid(10d57355d939d474cb34bb96779ef89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Environment/Socket Pack/Models/Fuse_Box.FBX using Guid(10d57355d939d474cb34bb96779ef89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c86d1d45f4a5cb7c6eb30ddb2fd8d3') in 0.054570 seconds
+  Import took 0.060241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Agents/Models/woman4/textures/3tex1.png
+  artifactKey: Guid(0154a3a41d30d4b7297e008c8ce6dfc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Agents/Models/woman4/textures/3tex1.png using Guid(0154a3a41d30d4b7297e008c8ce6dfc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a2b4a06f0c0397a47ac21bfd68e477') in 0.009967 seconds
+  Import took 0.015115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/SteamVR/Models/Materials/Abyss.mat
+  artifactKey: Guid(9b01d7c0e4dfa854eb5dfe2624e27c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Models/Materials/Abyss.mat using Guid(9b01d7c0e4dfa854eb5dfe2624e27c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451336ed70046c65c6b4a1a7af920a3b') in 0.215491 seconds
+  Import took 0.220729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/SteamVR/Prefabs/[Status].prefab
+  artifactKey: Guid(255333d57084e4e46b3d948279746a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SteamVR/Prefabs/[Status].prefab using Guid(255333d57084e4e46b3d948279746a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b498315fb0beb490a4e02d4bae1cadc2') in 0.013580 seconds
+  Import took 0.018205 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006378 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.429 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 237.1 MB.
+System memory in use after: 237.1 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 3295.
+Total: 2.069041 ms (FindLiveObjects: 0.198750 ms CreateObjectMapping: 0.058291 ms MarkObjects: 1.576792 ms  DeleteObjects: 0.234750 ms)
+
