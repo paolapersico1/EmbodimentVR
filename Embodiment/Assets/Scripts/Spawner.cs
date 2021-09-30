@@ -66,5 +66,4 @@ public class Spawner : MonoBehaviour {
     {
             Instantiate(objectsToSpawn[i], transform.position, Quaternion.identity);
     }
-
 }
