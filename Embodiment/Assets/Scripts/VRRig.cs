@@ -22,9 +22,11 @@ public class VRMap
 }
 public class VRRig : MonoBehaviour
 {
+    public bool cameraRigMode;
+
     public float avatarHeadHeight;
     public float avatarArmLength;
-    //public Vector3 avatarEyeHeadOffset;
+    public Vector3 avatarEyeHeadOffset;
     public float torsoOffset;
     
     public VRMap head;
@@ -42,6 +44,11 @@ public class VRRig : MonoBehaviour
     public float crouchingThreshold;
 
     private Animator animator;
+    private Vector3 leftHandGoalPosition;
+    private Quaternion leftHandGoalRotation;
+    private Vector3 rightHandGoalPosition;
+    private Quaternion rightHandGoalRotation;
+
     private float playerArmLength;
 
     // Start is called before the first frame update
@@ -51,8 +58,8 @@ public class VRRig : MonoBehaviour
 
         XRRig rig = FindObjectOfType<XRRig>();
         vrHead = rig.transform.Find("Camera Offset/Main Camera");
-        vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller");
-        vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller");
+        vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller/LeftHandCollider");
+        vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller/RightHandCollider");
     }
 
     public void Calibrate()
@@ -70,35 +77,43 @@ public class VRRig : MonoBehaviour
         float armOffset = avatarArmLength - playerArmLength;
         leftHand.trackingPositionOffset = new Vector3(0, 0, armOffset);
         rightHand.trackingPositionOffset = new Vector3(0, 0, armOffset);
+        leftHand.vrTarget.localPosition = leftHand.trackingPositionOffset;
+        rightHand.vrTarget.localPosition = rightHand.trackingPositionOffset;
 
-        //Transform cam = camOffset.transform.Find("Main Camera/Camera");
-        //cam.localPosition = avatarEyeHeadOffset;
+        if (!cameraRigMode)
+        {
+            Transform cam = camOffset.transform.Find("Main Camera/Camera");
+            cam.localPosition = avatarEyeHeadOffset;
+        }
     }
 
     void OnAnimatorIK(int layerIndex)
     {
         if (vrRightHand)
         {
-
-            Vector3 goalPosition = vrRightHand.TransformPoint(rightHand.trackingPositionOffset);
-            Quaternion goalRotation = vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset);
-
             float reach = animator.GetFloat("RightHand");
+            if (!HasCollided(vrRightHand))
+            {
+                rightHandGoalPosition = vrRightHand.TransformPoint(rightHand.trackingPositionOffset);
+                rightHandGoalRotation = vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset);
+            }
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, reach);
-            animator.SetIKPosition(AvatarIKGoal.RightHand, goalPosition);
+            animator.SetIKPosition(AvatarIKGoal.RightHand, rightHandGoalPosition);
             animator.SetIKRotationWeight(AvatarIKGoal.RightHand, reach);
-            animator.SetIKRotation(AvatarIKGoal.RightHand, goalRotation);
+            animator.SetIKRotation(AvatarIKGoal.RightHand, rightHandGoalRotation);
         }
         if (vrLeftHand)
         {
-            Vector3 goalPosition = vrLeftHand.TransformPoint(leftHand.trackingPositionOffset);
-            Quaternion goalRotation = vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset);
-
             float reach = animator.GetFloat("LeftHand");
+            if (!HasCollided(vrLeftHand))
+            {
+                leftHandGoalPosition = vrLeftHand.TransformPoint(leftHand.trackingPositionOffset);
+                leftHandGoalRotation = vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset);
+            }
             animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, reach);
-            animator.SetIKPosition(AvatarIKGoal.LeftHand, goalPosition);
+            animator.SetIKPosition(AvatarIKGoal.LeftHand, leftHandGoalPosition);
             animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, reach);
-            animator.SetIKRotation(AvatarIKGoal.LeftHand, goalRotation);
+            animator.SetIKRotation(AvatarIKGoal.LeftHand, leftHandGoalRotation);
         }
     }
 
@@ -106,11 +121,6 @@ public class VRRig : MonoBehaviour
     void OnAnimatorMove()
     {
         Vector3 handsPosition = Vector3.Lerp(rightHand.rigTarget.position, leftHand.rigTarget.position, 0.5f);
-        Vector3 newTorsoPosition = head.rigTarget.position - new Vector3(0, avatarHeadHeight, torsoOffset);
-
-        transform.position = new Vector3(newTorsoPosition.x, 
-                                        IsCrouched(head.rigTarget.position)? newTorsoPosition.y : transform.position.y, 
-                                        newTorsoPosition.z);
 
         handsTorsoRotation = Vector3.Angle(
                                 Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized,
@@ -123,6 +133,11 @@ public class VRRig : MonoBehaviour
             transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(head.rigTarget.forward, Vector3.up).normalized,
                                         Time.deltaTime * turnSmoothness);
         }
+
+        transform.position = new Vector3(head.rigTarget.position.x,
+                                        IsCrouched(head.rigTarget.position) ? head.rigTarget.position.y - avatarHeadHeight: 
+                                                                              transform.position.y,
+                                        head.rigTarget.position.z) + transform.forward * torsoOffset;
 
         head.Map(vrHead);
     }
@@ -141,4 +156,6 @@ public class VRRig : MonoBehaviour
 
         return true;
     }
+
+    private bool HasCollided(Transform bodyPart) => bodyPart.gameObject.GetComponent<CollisionDetection>().HasCollided();
 }
