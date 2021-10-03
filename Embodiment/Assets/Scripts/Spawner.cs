@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
     
     public List<GameObject> objectsToSpawn = new List<GameObject>();
+    //public GameObject[] items;
     public float timeToStart;
     public float timeToSpawn;
     private float currentTimeToSpawn;
@@ -15,10 +16,27 @@ public class Spawner : MonoBehaviour {
     void Star()
     {
         currentTimeToSpawn = timeToSpawn;
+        //objectsToSpawn = Resources.LoadAll("Agents/Prefabs") as List<GameObject>();
+
+       // items = Resources.LoadAll<GameObject>("Agents");
+       // objectsToSpawn.AddRange(items);
+       // while(!done)
+       // {
+       //     // We just keep loading until obj becomes null
+       //     obj = Resources.Load("Agents/Prefabs/agent" + counter) as GameObject;
+       //     if(obj == null)
+       //         done = true; // Let's stop this now.
+       //     else
+       //         objectsToSpawn.Add(obj);
+       //     ++counter;
+       // }
     }
 
     void Update()
     {
+        
+        //Debug.Log("Count: " + objectsToSpawn.Count);
+        //Debug.Log("Items: " + objectsToSpawn.Count);
         // wait to start spawning
         if(timeToStart > 0)
         {
