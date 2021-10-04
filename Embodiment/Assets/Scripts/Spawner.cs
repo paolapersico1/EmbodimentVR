@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour {
     private float currentTimeToSpawn;
     private int i = 0; // objectsToSpawn index
     private int count = 1; // how many to spawn
+    private int stopCount = 50;
 
 
     void Star()
@@ -34,9 +35,6 @@ public class Spawner : MonoBehaviour {
 
     void Update()
     {
-        
-        //Debug.Log("Count: " + objectsToSpawn.Count);
-        //Debug.Log("Items: " + objectsToSpawn.Count);
         // wait to start spawning
         if(timeToStart > 0)
         {
@@ -50,12 +48,13 @@ public class Spawner : MonoBehaviour {
                 currentTimeToSpawn -= Time.deltaTime;
             }
             // when below zero start spawning until count
-            else
+            else if (stopCount > 0)
             {
                 int j = 0;
                 while (j < count)
                 {
                     SpawnObject(i);
+                    stopCount--;
                     if (i == (objectsToSpawn.Count - 1))
                     {
                         i = 0;
