@@ -8,7 +8,7 @@ public class VRMap
 {
     public Transform vrTarget;
     public Transform rigTarget;
-    
+
     public Vector3 trackingPositionOffset;
     public Vector3 trackingRotationOffset;
 
@@ -22,13 +22,13 @@ public class VRMap
 }
 public class VRRig : MonoBehaviour
 {
-    public bool cameraRigMode;
+    public bool cameraInRigMode;
+    public bool collisionMode;
 
     public float avatarHeadHeight;
     public float avatarArmLength;
-    public Vector3 avatarEyeHeadOffset;
     public float torsoOffset;
-    
+
     public VRMap head;
     public VRMap leftHand;
     public VRMap rightHand;
@@ -40,8 +40,11 @@ public class VRRig : MonoBehaviour
     public bool bodyRotation = true;
     public int rotThreshold;
     public float turnSmoothness;
-    public float handsTorsoRotation; //DEBUG
     public float crouchingThreshold;
+
+    //DEBUG
+    public float handsTorsoRotation;
+    public bool isCrouched;
 
     private Animator animator;
     private Vector3 leftHandGoalPosition;
@@ -55,21 +58,18 @@ public class VRRig : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-
         XRRig rig = FindObjectOfType<XRRig>();
-        vrHead = rig.transform.Find("Camera Offset/Main Camera");
-        vrLeftHand = rig.transform.Find("Camera Offset/LeftHand Controller/LeftHandCollider");
-        vrRightHand = rig.transform.Find("Camera Offset/RightHand Controller/RightHandCollider");
-    }
+        vrHead = head.vrTarget;
+        vrLeftHand = leftHand.vrTarget;
+        vrRightHand = rightHand.vrTarget;
 
-    public void Calibrate()
-    {
         GameObject camOffset = GameObject.Find("XR Rig/Camera Offset");
 
         float playerHeadHeight = camOffset.GetComponent<Calibrator>().GetPlayerHeadHeight();
         playerArmLength = camOffset.GetComponent<Calibrator>().GetPlayerArmLength();
 
         avatarHeadHeight = head.rigTarget.position.y - transform.position.y;
+        Debug.Log("Height difference: " + (avatarHeadHeight - playerHeadHeight));
         camOffset.transform.position = new Vector3(0, avatarHeadHeight - playerHeadHeight, 0);
 
         //how longer are the avatar's arms
@@ -79,12 +79,6 @@ public class VRRig : MonoBehaviour
         rightHand.trackingPositionOffset = new Vector3(0, 0, armOffset);
         leftHand.vrTarget.localPosition = leftHand.trackingPositionOffset;
         rightHand.vrTarget.localPosition = rightHand.trackingPositionOffset;
-
-        if (!cameraRigMode)
-        {
-            Transform cam = camOffset.transform.Find("Main Camera/Camera");
-            cam.localPosition = avatarEyeHeadOffset;
-        }
     }
 
     void OnAnimatorIK(int layerIndex)
@@ -92,7 +86,7 @@ public class VRRig : MonoBehaviour
         if (vrRightHand)
         {
             float reach = animator.GetFloat("RightHand");
-            if (!HasCollided(vrRightHand))
+            if (!collisionMode || (collisionMode && !HasCollided(vrRightHand)))
             {
                 rightHandGoalPosition = vrRightHand.TransformPoint(rightHand.trackingPositionOffset);
                 rightHandGoalRotation = vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset);
@@ -105,7 +99,7 @@ public class VRRig : MonoBehaviour
         if (vrLeftHand)
         {
             float reach = animator.GetFloat("LeftHand");
-            if (!HasCollided(vrLeftHand))
+            if (!collisionMode || (collisionMode && !HasCollided(vrLeftHand)))
             {
                 leftHandGoalPosition = vrLeftHand.TransformPoint(leftHand.trackingPositionOffset);
                 leftHandGoalRotation = vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset);
@@ -134,8 +128,9 @@ public class VRRig : MonoBehaviour
                                         Time.deltaTime * turnSmoothness);
         }
 
+        isCrouched = IsCrouched(head.rigTarget.position);
         transform.position = new Vector3(head.rigTarget.position.x,
-                                        IsCrouched(head.rigTarget.position) ? head.rigTarget.position.y - avatarHeadHeight: 
+                                        isCrouched ? head.rigTarget.position.y - avatarHeadHeight: 
                                                                               transform.position.y,
                                         head.rigTarget.position.z) + transform.forward * torsoOffset;
 
