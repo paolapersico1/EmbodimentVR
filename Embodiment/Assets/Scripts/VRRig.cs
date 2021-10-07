@@ -63,14 +63,14 @@ public class VRRig : MonoBehaviour
         vrLeftHand = leftHand.vrTarget;
         vrRightHand = rightHand.vrTarget;
 
-        GameObject camOffset = GameObject.Find("XR Rig/Camera Offset");
+        GameObject playerOffset = GameObject.Find("XR Rig/Player Offset");
 
-        float playerHeadHeight = camOffset.GetComponent<Calibrator>().GetPlayerHeadHeight();
-        playerArmLength = camOffset.GetComponent<Calibrator>().GetPlayerArmLength();
+        float playerHeadHeight = playerOffset.GetComponent<Calibrator>().GetPlayerHeadHeight();
+        playerArmLength = playerOffset.GetComponent<Calibrator>().GetPlayerArmLength();
 
         avatarHeadHeight = head.rigTarget.position.y - transform.position.y;
         Debug.Log("Height difference: " + (avatarHeadHeight - playerHeadHeight));
-        camOffset.transform.position = new Vector3(0, avatarHeadHeight - playerHeadHeight, 0);
+        playerOffset.transform.position = new Vector3(0, avatarHeadHeight - playerHeadHeight, 0);
 
         //how longer are the avatar's arms
         avatarArmLength = Vector3.Distance(rightHand.rigTarget.position, head.rigTarget.position);
