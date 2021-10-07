@@ -3221,7 +3221,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21588
+  m_Name: pb_Mesh21584
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11123,7 +11123,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21622
+  m_Name: pb_Mesh21618
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13463,6 +13463,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2159079996561933461, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159079996561933461, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c03e593f4c987ce4bba401716b04b261, type: 2}
     - target: {fileID: 5978529666982911022, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
       propertyPath: m_Name
       value: GiuliaMixamo
