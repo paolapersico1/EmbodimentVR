@@ -22,7 +22,6 @@ public class VRMap
 }
 public class VRRig : MonoBehaviour
 {
-    public bool cameraInRigMode;
     public bool collisionMode;
 
     public float avatarHeadHeight;
@@ -32,6 +31,9 @@ public class VRRig : MonoBehaviour
     public VRMap head;
     public VRMap leftHand;
     public VRMap rightHand;
+
+    public Transform leftHandCollider;
+    public Transform rightHandCollider;
 
     private Transform vrHead;
     private Transform vrLeftHand;
@@ -86,7 +88,7 @@ public class VRRig : MonoBehaviour
         if (vrRightHand)
         {
             float reach = animator.GetFloat("RightHand");
-            if (!collisionMode || (collisionMode && !HasCollided(vrRightHand)))
+            if (!collisionMode || (collisionMode && !HasCollided(rightHandCollider)))
             {
                 rightHandGoalPosition = vrRightHand.TransformPoint(rightHand.trackingPositionOffset);
                 rightHandGoalRotation = vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset);
@@ -99,7 +101,7 @@ public class VRRig : MonoBehaviour
         if (vrLeftHand)
         {
             float reach = animator.GetFloat("LeftHand");
-            if (!collisionMode || (collisionMode && !HasCollided(vrLeftHand)))
+            if (!collisionMode || (collisionMode && !HasCollided(leftHandCollider)))
             {
                 leftHandGoalPosition = vrLeftHand.TransformPoint(leftHand.trackingPositionOffset);
                 leftHandGoalRotation = vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset);
