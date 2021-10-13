@@ -65,11 +65,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936906836342711256, guid: 04a9957e9226a8a4b903fb7299b9177a, type: 3}
       propertyPath: m_Name
-      value: male4 Variant
+      value: agent6
       objectReference: {fileID: 0}
     - target: {fileID: 8936906836342711256, guid: 04a9957e9226a8a4b903fb7299b9177a, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8126513235129285182, guid: 04a9957e9226a8a4b903fb7299b9177a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 04a9957e9226a8a4b903fb7299b9177a, type: 3}

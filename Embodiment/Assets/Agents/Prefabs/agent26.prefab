@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2141732419349416842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988698192619559422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67bd1aa03668947c2a3fd1f53d831efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ikActive: 1
+  lookObj: {fileID: 0}
+  lookWeight: 2
 --- !u!1001 &602956236429788617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61,7 +76,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5576946261518048311, guid: 1e106296b7be9ba41b586f0f7f9c2d3c, type: 3}
       propertyPath: m_Name
-      value: woman6 Variant
+      value: agent26
       objectReference: {fileID: 0}
     - target: {fileID: 5576946261518048311, guid: 1e106296b7be9ba41b586f0f7f9c2d3c, type: 3}
       propertyPath: m_IsActive
@@ -71,5 +86,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 944eec04f802208469c8e7f746abcfa4, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4729943725949307089, guid: 1e106296b7be9ba41b586f0f7f9c2d3c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1e106296b7be9ba41b586f0f7f9c2d3c, type: 3}
+--- !u!1 &4988698192619559422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5576946261518048311, guid: 1e106296b7be9ba41b586f0f7f9c2d3c, type: 3}
+  m_PrefabInstance: {fileID: 602956236429788617}
+  m_PrefabAsset: {fileID: 0}

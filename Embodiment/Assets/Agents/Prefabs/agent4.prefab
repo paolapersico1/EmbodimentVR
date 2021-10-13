@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dc486f402ad223a40ac8dff7ef1ad713, type: 2}
+    - target: {fileID: 8160988009243138250, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
+      propertyPath: ikActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8559968666318331562, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -61,11 +65,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9043455146659447824, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_Name
-      value: male3 Variant
+      value: agent4
       objectReference: {fileID: 0}
     - target: {fileID: 9043455146659447824, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8160988009243138248, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f05b242791d79734d83fce9527b91d7c, type: 3}

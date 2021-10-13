@@ -1336,9 +1336,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3232518538785726139}
   - component: {fileID: 8807944282356696257}
-  - component: {fileID: 3122840627277990141}
   - component: {fileID: 3122840627277990138}
   - component: {fileID: 3122840627277990137}
+  - component: {fileID: 5574804672831088480}
   m_Layer: 0
   m_Name: agent13
   m_TagString: Untagged
@@ -1389,22 +1389,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!208 &3122840627277990141
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853002672548627457}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.3, y: 1, z: 0.3}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &3122840627277990138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,9 +1401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d78d05eb033d441f9800349f918f882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMode1: 0
-  timeMode2: 0
-  timeMode3: 0
 --- !u!195 &3122840627277990137
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1442,6 +1423,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5574804672831088480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853002672548627457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67bd1aa03668947c2a3fd1f53d831efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ikActive: 1
+  lookObj: {fileID: 0}
+  lookWeight: 2
 --- !u!1 &2879954250328761486
 GameObject:
   m_ObjectHideFlags: 0

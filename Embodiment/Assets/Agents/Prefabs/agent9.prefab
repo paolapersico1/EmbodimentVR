@@ -3279,7 +3279,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7313691084500153181}
   - component: {fileID: 3719796950345672999}
-  - component: {fileID: 226246181002292551}
   - component: {fileID: 226246181002292571}
   - component: {fileID: 226246181002292549}
   - component: {fileID: 226246181002292548}
@@ -3332,22 +3331,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!208 &226246181002292551
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7941152251905763815}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.3, y: 1, z: 0.3}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &226246181002292571
 MonoBehaviour:
   m_ObjectHideFlags: 0
