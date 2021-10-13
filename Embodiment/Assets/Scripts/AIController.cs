@@ -52,7 +52,7 @@ public class AIController : MonoBehaviour
         animator.SetFloat("talkMult", Random.Range(0.75f, 1.25f));
 
         // Head Controller
-        timeToLook = Random.Range(0, 30);
+        timeToLook = Random.Range(1, 30);
         this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
         this.GetComponent<HeadController>().enabled = false;
         this.GetComponent<HeadController>().ikActive = true;
