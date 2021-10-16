@@ -22,16 +22,17 @@ public class VRMap
 }
 public class VRRig : MonoBehaviour
 {
-    public bool cameraInRigMode;
-    public bool collisionMode;
+    //public bool collisionMode;
 
     public float avatarHeadHeight;
     public float avatarArmLength;
-    public float torsoOffset;
 
     public VRMap head;
     public VRMap leftHand;
     public VRMap rightHand;
+
+    public Transform leftHandCollider;
+    public Transform rightHandCollider;
 
     private Transform vrHead;
     private Transform vrLeftHand;
@@ -47,10 +48,10 @@ public class VRRig : MonoBehaviour
     public bool isCrouched;
 
     private Animator animator;
-    private Vector3 leftHandGoalPosition;
-    private Quaternion leftHandGoalRotation;
-    private Vector3 rightHandGoalPosition;
-    private Quaternion rightHandGoalRotation;
+    public Vector3 leftHandPrevPosition;
+    private Quaternion leftHandPrevRotation;
+    private Vector3 rightHandPrevPosition;
+    private Quaternion rightHandPrevRotation;
 
     private float playerArmLength;
 
@@ -83,37 +84,52 @@ public class VRRig : MonoBehaviour
 
     void OnAnimatorIK(int layerIndex)
     {
-        if (vrRightHand)
+        if (HasCollided(rightHandCollider))
         {
-            float reach = animator.GetFloat("RightHand");
-            if (!collisionMode || (collisionMode && !HasCollided(vrRightHand)))
-            {
-                rightHandGoalPosition = vrRightHand.TransformPoint(rightHand.trackingPositionOffset);
-                rightHandGoalRotation = vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset);
-            }
-            animator.SetIKPositionWeight(AvatarIKGoal.RightHand, reach);
-            animator.SetIKPosition(AvatarIKGoal.RightHand, rightHandGoalPosition);
-            animator.SetIKRotationWeight(AvatarIKGoal.RightHand, reach);
-            animator.SetIKRotation(AvatarIKGoal.RightHand, rightHandGoalRotation);
+            Debug.Log("right");
+            UpdateHand(true, rightHandPrevPosition, rightHandPrevRotation);
+            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand);
+            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
         }
-        if (vrLeftHand)
+        else
         {
-            float reach = animator.GetFloat("LeftHand");
-            if (!collisionMode || (collisionMode && !HasCollided(vrLeftHand)))
-            {
-                leftHandGoalPosition = vrLeftHand.TransformPoint(leftHand.trackingPositionOffset);
-                leftHandGoalRotation = vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset);
-            }
-            animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, reach);
-            animator.SetIKPosition(AvatarIKGoal.LeftHand, leftHandGoalPosition);
-            animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, reach);
-            animator.SetIKRotation(AvatarIKGoal.LeftHand, leftHandGoalRotation);
+            UpdateHand(true, vrRightHand.TransformPoint(rightHand.trackingPositionOffset),
+              vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset));
+            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand) + transform.forward * 0.1f;
+            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
         }
+
+        if (HasCollided(leftHandCollider))
+        {
+            Debug.Log("left");
+            UpdateHand(false, leftHandPrevPosition, leftHandPrevRotation);
+            leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand);
+            leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
+        }
+        else
+        { 
+            UpdateHand(false, vrLeftHand.TransformPoint(leftHand.trackingPositionOffset),
+                   vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset));
+            leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand) + transform.forward * 0.1f;
+            leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
+        }
+
+        /*rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand) + transform.forward * 0.01f;
+        rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
+        leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand) + transform.forward * 0.01f;
+        leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);*/
+
     }
 
     // Update is called once per frame
     void OnAnimatorMove()
     {
+        isCrouched = IsCrouched(head.rigTarget.position);
+        transform.position = new Vector3(head.rigTarget.position.x,
+                                        isCrouched ? head.rigTarget.position.y - avatarHeadHeight :
+                                                                              transform.position.y,
+                                        head.rigTarget.position.z);
+
         Vector3 handsPosition = Vector3.Lerp(rightHand.rigTarget.position, leftHand.rigTarget.position, 0.5f);
 
         handsTorsoRotation = Vector3.Angle(
@@ -128,13 +144,21 @@ public class VRRig : MonoBehaviour
                                         Time.deltaTime * turnSmoothness);
         }
 
-        isCrouched = IsCrouched(head.rigTarget.position);
-        transform.position = new Vector3(head.rigTarget.position.x,
-                                        isCrouched ? head.rigTarget.position.y - avatarHeadHeight: 
-                                                                              transform.position.y,
-                                        head.rigTarget.position.z) + transform.forward * torsoOffset;
-
         head.Map(vrHead);
+    }
+
+    private void UpdateHand(bool isRightHand, Vector3 handPos,  Quaternion handRot)
+    {
+        if ((isRightHand) ? vrRightHand : vrLeftHand)
+        {
+            float reach = animator.GetFloat((isRightHand) ? "RightHand" : "LeftHand");
+            AvatarIKGoal ikGoal = (isRightHand) ? AvatarIKGoal.RightHand : AvatarIKGoal.LeftHand;
+
+            animator.SetIKPositionWeight(ikGoal, reach);
+            animator.SetIKPosition(ikGoal, handPos);
+            animator.SetIKRotationWeight(ikGoal, reach);
+            animator.SetIKRotation(ikGoal, handRot);
+        }
     }
 
     private bool IsCrouched(Vector3 headPosition)
