@@ -33,6 +33,7 @@ public class VRRig : MonoBehaviour
 
     public Transform leftHandCollider;
     public Transform rightHandCollider;
+    public bool isReplica;
 
     private Transform vrHead;
     private Transform vrLeftHand;
@@ -48,7 +49,7 @@ public class VRRig : MonoBehaviour
     public bool isCrouched;
 
     private Animator animator;
-    public Vector3 leftHandPrevPosition;
+    private Vector3 leftHandPrevPosition;
     private Quaternion leftHandPrevRotation;
     private Vector3 rightHandPrevPosition;
     private Quaternion rightHandPrevRotation;
@@ -84,41 +85,42 @@ public class VRRig : MonoBehaviour
 
     void OnAnimatorIK(int layerIndex)
     {
-        if (HasCollided(rightHandCollider))
+        if (isReplica)
         {
-            Debug.Log("right");
-            UpdateHand(true, rightHandPrevPosition, rightHandPrevRotation);
-            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand);
-            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
+            UpdateHand(true, vrRightHand.TransformPoint(rightHand.trackingPositionOffset),
+               vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset));
+            UpdateHand(false, vrLeftHand.TransformPoint(leftHand.trackingPositionOffset),
+             vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset));
         }
         else
         {
-            UpdateHand(true, vrRightHand.TransformPoint(rightHand.trackingPositionOffset),
-              vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset));
-            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand) + transform.forward * 0.1f;
-            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
-        }
+            if (HasCollided(rightHandCollider))
+            {
+                Debug.Log("right");
+                UpdateHand(true, rightHandPrevPosition, rightHandPrevRotation);
+            }
+            else
+            {
+                UpdateHand(true, vrRightHand.TransformPoint(rightHand.trackingPositionOffset),
+                    vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset));
+            }
 
-        if (HasCollided(leftHandCollider))
-        {
-            Debug.Log("left");
-            UpdateHand(false, leftHandPrevPosition, leftHandPrevRotation);
+            if (HasCollided(leftHandCollider))
+            {
+                Debug.Log("left");
+                UpdateHand(false, leftHandPrevPosition, leftHandPrevRotation);
+            }
+            else
+            {
+                UpdateHand(false, vrLeftHand.TransformPoint(leftHand.trackingPositionOffset),
+                    vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset));
+            }
+
+            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand);
+            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
             leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand);
             leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
         }
-        else
-        { 
-            UpdateHand(false, vrLeftHand.TransformPoint(leftHand.trackingPositionOffset),
-                   vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset));
-            leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand) + transform.forward * 0.1f;
-            leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
-        }
-
-        /*rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand) + transform.forward * 0.01f;
-        rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
-        leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand) + transform.forward * 0.01f;
-        leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);*/
-
     }
 
     // Update is called once per frame
@@ -177,4 +179,5 @@ public class VRRig : MonoBehaviour
     }
 
     private bool HasCollided(Transform bodyPart) => bodyPart.gameObject.GetComponent<CollisionDetection>().HasCollided();
+    private void AddForce(Transform bodyPart, Vector3 force) => bodyPart.gameObject.GetComponent<CollisionDetection>().AddForce(force);
 }
