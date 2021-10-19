@@ -11,36 +11,18 @@ public class CollisionDetection : MonoBehaviour
         hasCollided = false;
     }
 
-    /*void OnTriggerEnter(Collider other)
-    {
-        hasCollided = true;
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        hasCollided = false;
-    }*/
-
     public bool HasCollided()
     {
         return hasCollided;
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         hasCollided = true;
-        Debug.Log("collision enter");
     }
 
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
         hasCollided = false;
-        Debug.Log("collision exit");
-    }
-
-    public void AddForce(Vector3 force)
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.AddForce(force, ForceMode.Impulse);
     }
 }

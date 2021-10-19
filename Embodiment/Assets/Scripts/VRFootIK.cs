@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VRFootIK : MonoBehaviour
 {
+    public LayerMask floorLayer;
     private Animator animator;
     public Vector3 footOffset;
     [Range (0,1)]
@@ -28,7 +29,7 @@ public class VRFootIK : MonoBehaviour
         RaycastHit hit; //the point where the ray hits the ground
 
         //if the right foot hits the ground (i.e. the ray from 1 meter above the foot going down intersects with a collider)
-        bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit);
+        bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit, 1000f, floorLayer);
         if (hasHit)
         {
             //SetIKPositionWeight->sets the weight of an IK goal(0 = at the original animation before IK, 1 = at the goal).

@@ -43,18 +43,16 @@ public class VRRig : MonoBehaviour
     public int rotThreshold;
     public float turnSmoothness;
     public float crouchingThreshold;
+    public LayerMask floorLayer;
 
     //DEBUG
     public float handsTorsoRotation;
     public bool isCrouched;
 
-    private Animator animator;
-    private Vector3 leftHandPrevPosition;
-    private Quaternion leftHandPrevRotation;
-    private Vector3 rightHandPrevPosition;
-    private Quaternion rightHandPrevRotation;
+    public Transform leftHandTarget;
+    public Transform rightHandTarget;
 
-    private float playerArmLength;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +66,7 @@ public class VRRig : MonoBehaviour
         GameObject playerOffset = GameObject.Find("XR Rig/Player Offset");
 
         float playerHeadHeight = playerOffset.GetComponent<Calibrator>().GetPlayerHeadHeight();
-        playerArmLength = playerOffset.GetComponent<Calibrator>().GetPlayerArmLength();
+        float playerArmLength = playerOffset.GetComponent<Calibrator>().GetPlayerArmLength();
 
         avatarHeadHeight = head.rigTarget.position.y - transform.position.y;
         Debug.Log("Height difference: " + (avatarHeadHeight - playerHeadHeight));
@@ -97,7 +95,7 @@ public class VRRig : MonoBehaviour
             if (HasCollided(rightHandCollider))
             {
                 Debug.Log("right");
-                UpdateHand(true, rightHandPrevPosition, rightHandPrevRotation);
+                UpdateHand(true, rightHandTarget.position, rightHandTarget.rotation);
             }
             else
             {
@@ -108,7 +106,7 @@ public class VRRig : MonoBehaviour
             if (HasCollided(leftHandCollider))
             {
                 Debug.Log("left");
-                UpdateHand(false, leftHandPrevPosition, leftHandPrevRotation);
+                UpdateHand(false, leftHandTarget.position, leftHandTarget.rotation);
             }
             else
             {
@@ -116,10 +114,10 @@ public class VRRig : MonoBehaviour
                     vrLeftHand.rotation * Quaternion.Euler(leftHand.trackingRotationOffset));
             }
 
-            rightHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.RightHand);
-            rightHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
-            leftHandPrevPosition = animator.GetIKPosition(AvatarIKGoal.LeftHand);
-            leftHandPrevRotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
+            rightHandTarget.position = animator.GetIKPosition(AvatarIKGoal.RightHand);
+            rightHandTarget.rotation = animator.GetIKRotation(AvatarIKGoal.RightHand);
+            leftHandTarget.position = animator.GetIKPosition(AvatarIKGoal.LeftHand);
+            leftHandTarget.rotation = animator.GetIKRotation(AvatarIKGoal.LeftHand);
         }
     }
 
@@ -168,7 +166,7 @@ public class VRRig : MonoBehaviour
         RaycastHit hit;
         Ray ray = new Ray(headPosition, Vector3.down);
 
-        if(Physics.Raycast(ray, out hit))
+        if(Physics.Raycast(ray, out hit, 1000f, floorLayer))
         {
             float distance = Vector3.Distance(headPosition, hit.transform.position);
             if (distance < (avatarHeadHeight * crouchingThreshold))
@@ -179,5 +177,4 @@ public class VRRig : MonoBehaviour
     }
 
     private bool HasCollided(Transform bodyPart) => bodyPart.gameObject.GetComponent<CollisionDetection>().HasCollided();
-    private void AddForce(Transform bodyPart, Vector3 force) => bodyPart.gameObject.GetComponent<CollisionDetection>().AddForce(force);
 }
