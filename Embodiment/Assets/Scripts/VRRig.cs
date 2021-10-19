@@ -22,7 +22,7 @@ public class VRMap
 }
 public class VRRig : MonoBehaviour
 {
-    //public bool collisionMode;
+    public bool collisionMode;
 
     public float avatarHeadHeight;
     public float avatarArmLength;
@@ -43,11 +43,12 @@ public class VRRig : MonoBehaviour
     public int rotThreshold;
     public float turnSmoothness;
     public float crouchingThreshold;
+    public float crouchSmoothness;
     public LayerMask floorLayer;
 
     //DEBUG
     public float handsTorsoRotation;
-    public bool isCrouched;
+    public bool isLookingDown;
 
     public Transform leftHandTarget;
     public Transform rightHandTarget;
@@ -92,9 +93,9 @@ public class VRRig : MonoBehaviour
         }
         else
         {
-            if (HasCollided(rightHandCollider))
+            if (collisionMode && HasCollided(rightHandCollider))
             {
-                Debug.Log("right");
+                //Debug.Log("right");
                 UpdateHand(true, rightHandTarget.position, rightHandTarget.rotation);
             }
             else
@@ -103,9 +104,9 @@ public class VRRig : MonoBehaviour
                     vrRightHand.rotation * Quaternion.Euler(rightHand.trackingRotationOffset));
             }
 
-            if (HasCollided(leftHandCollider))
+            if (collisionMode && HasCollided(leftHandCollider))
             {
-                Debug.Log("left");
+                //Debug.Log("left");
                 UpdateHand(false, leftHandTarget.position, leftHandTarget.rotation);
             }
             else
@@ -124,10 +125,11 @@ public class VRRig : MonoBehaviour
     // Update is called once per frame
     void OnAnimatorMove()
     {
-        isCrouched = IsCrouched(head.rigTarget.position);
+        bool isLookingDown = IsLookingDown(head.rigTarget.position);
+
         transform.position = new Vector3(head.rigTarget.position.x,
-                                        isCrouched ? head.rigTarget.position.y - avatarHeadHeight :
-                                                                              transform.position.y,
+                                        isLookingDown ? transform.position.y :
+                                            Mathf.Lerp(transform.position.y, head.rigTarget.position.y - avatarHeadHeight, Time.deltaTime * crouchSmoothness),
                                         head.rigTarget.position.z);
 
         Vector3 handsPosition = Vector3.Lerp(rightHand.rigTarget.position, leftHand.rigTarget.position, 0.5f);
@@ -161,19 +163,19 @@ public class VRRig : MonoBehaviour
         }
     }
 
-    private bool IsCrouched(Vector3 headPosition)
+    private bool IsLookingDown(Vector3 headPosition)
     {
         RaycastHit hit;
         Ray ray = new Ray(headPosition, Vector3.down);
 
-        if(Physics.Raycast(ray, out hit, 1000f, floorLayer))
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity, floorLayer))
         {
             float distance = Vector3.Distance(headPosition, hit.transform.position);
             if (distance < (avatarHeadHeight * crouchingThreshold))
-                return false;
+                return true;
         }
 
-        return true;
+        return false;
     }
 
     private bool HasCollided(Transform bodyPart) => bodyPart.gameObject.GetComponent<CollisionDetection>().HasCollided();

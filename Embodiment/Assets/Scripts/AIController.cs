@@ -130,7 +130,7 @@ public class AIController : MonoBehaviour
                 agent.isStopped = false;
                 if (agent.remainingDistance < 1) {
                     Destroy(agent);
-                    Destroy(agentObj);
+                    //Destroy(agentObj);
                     alive = false; // the agent is dead here
                 }
             }
