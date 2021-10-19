@@ -125,7 +125,7 @@ public class VRRig : MonoBehaviour
     // Update is called once per frame
     void OnAnimatorMove()
     {
-        bool isLookingDown = IsLookingDown(head.rigTarget.position);
+        isLookingDown = IsLookingDown(head.rigTarget.position);
 
         transform.position = new Vector3(head.rigTarget.position.x,
                                         isLookingDown ? transform.position.y :
@@ -168,7 +168,7 @@ public class VRRig : MonoBehaviour
         RaycastHit hit;
         Ray ray = new Ray(headPosition, Vector3.down);
 
-        if(Physics.Raycast(ray, out hit, Mathf.Infinity, floorLayer))
+        if(Physics.Raycast(ray, out hit, floorLayer))
         {
             float distance = Vector3.Distance(headPosition, hit.transform.position);
             if (distance < (avatarHeadHeight * crouchingThreshold))

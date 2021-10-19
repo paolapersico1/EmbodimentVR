@@ -29,7 +29,7 @@ public class VRFootIK : MonoBehaviour
         RaycastHit hit; //the point where the ray hits the ground
 
         //if the right foot hits the ground (i.e. the ray from 1 meter above the foot going down intersects with a collider)
-        bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit, Mathf.Infinity, floorLayer);
+        bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit, floorLayer);
         if (hasHit)
         {
             //SetIKPositionWeight->sets the weight of an IK goal(0 = at the original animation before IK, 1 = at the goal).
@@ -50,7 +50,7 @@ public class VRFootIK : MonoBehaviour
         //the same for the left foot
         Vector3 leftFootPos = animator.GetIKPosition(AvatarIKGoal.LeftFoot);
 
-        hasHit = Physics.Raycast(leftFootPos + Vector3.up, Vector3.down, out hit, Mathf.Infinity, floorLayer);
+        hasHit = Physics.Raycast(leftFootPos + Vector3.up, Vector3.down, out hit, floorLayer);
         if (hasHit)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, leftFootPosWeight);

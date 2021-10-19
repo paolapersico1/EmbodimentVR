@@ -3737,7 +3737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732109015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.2, y: -2.641, z: -32.3}
+  m_LocalPosition: {x: -27.2, y: -2.64, z: -32.3}
   m_LocalScale: {x: 11.1950865, y: 1, z: 8.3585}
   m_Children: []
   m_Father: {fileID: 1986864792}
@@ -10655,6 +10655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
+  mat: {fileID: 0}
 --- !u!20 &1869296024
 Camera:
   m_ObjectHideFlags: 0
@@ -13308,6 +13309,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7872376834679856475, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
+      propertyPath: rotThreshold
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
       propertyPath: collisionMode
       value: 1
@@ -13320,6 +13329,10 @@ PrefabInstance:
       propertyPath: leftHand.vrTarget
       value: 
       objectReference: {fileID: 1034138651}
+    - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
+      propertyPath: crouchingThreshold
+      value: 0.32
+      objectReference: {fileID: 0}
     - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
       propertyPath: rightHand.vrTarget
       value: 
@@ -14085,6 +14098,10 @@ PrefabInstance:
     - target: {fileID: 6789573222702227632, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
       propertyPath: torsoOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789573222702227632, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
+      propertyPath: rotThreshold
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6789573222702227632, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
       propertyPath: collisionMode
