@@ -125,10 +125,10 @@ public class VRRig : MonoBehaviour
     // Update is called once per frame
     void OnAnimatorMove()
     {
-        isLookingDown = IsLookingDown(head.rigTarget.position);
+        isLookingDown = IsLookingDown(head.rigTarget);
 
         transform.position = new Vector3(head.rigTarget.position.x,
-                                        isLookingDown ? transform.position.y :
+                                        isLookingDown? transform.position.y :
                                             Mathf.Lerp(transform.position.y, head.rigTarget.position.y - avatarHeadHeight, Time.deltaTime * crouchSmoothness),
                                         head.rigTarget.position.z);
 
@@ -163,14 +163,14 @@ public class VRRig : MonoBehaviour
         }
     }
 
-    private bool IsLookingDown(Vector3 headPosition)
+    private bool IsLookingDown(Transform head)
     {
         RaycastHit hit;
-        Ray ray = new Ray(headPosition, Vector3.down);
+        Ray ray = new Ray(head.position, head.forward);
 
-        if(Physics.Raycast(ray, out hit, floorLayer))
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity, floorLayer.value))
         {
-            float distance = Vector3.Distance(headPosition, hit.transform.position);
+            float distance = Vector3.Distance(head.position, hit.point);
             if (distance < (avatarHeadHeight * crouchingThreshold))
                 return true;
         }

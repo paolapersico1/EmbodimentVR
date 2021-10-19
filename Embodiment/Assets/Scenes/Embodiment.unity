@@ -2980,7 +2980,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5978529666793867268}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -10655,7 +10655,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
-  mat: {fileID: 0}
 --- !u!20 &1869296024
 Camera:
   m_ObjectHideFlags: 0
@@ -13331,7 +13330,7 @@ PrefabInstance:
       objectReference: {fileID: 1034138651}
     - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
       propertyPath: crouchingThreshold
-      value: 0.32
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7872376834679856476, guid: 6f6ebe5bb578c3a4598f9e97882ec05b, type: 3}
       propertyPath: rightHand.vrTarget
@@ -14145,7 +14144,7 @@ PrefabInstance:
       objectReference: {fileID: 5155711271144049309}
     - target: {fileID: 6789573222702227632, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
       propertyPath: crouchingThreshold
-      value: 0.32
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6789573222702227632, guid: eee919223519a3a488dd1ef48e49b9d0, type: 3}
       propertyPath: rightHand.vrTarget
