@@ -522,7 +522,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 264c952628227c4469f7175163642bf4, type: 2}
+  - {fileID: 2100000, guid: 1fff79f6c92d031419d45601fa9289d4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1377,7 +1377,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 40c5dedd3485b074b8ea122273c9ffa1, type: 2}
+  - {fileID: 2100000, guid: cea1b1d62bc3d664dab9d12dc60c104b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1876,7 +1876,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 594af57ecb48dcc479efae847b94334a, type: 2}
+  - {fileID: 2100000, guid: e81585ecda451124ca5abc169d92bd47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2505,7 +2505,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70b29e17abfe9f14898b11061bb15a1f, type: 2}
+  - {fileID: 2100000, guid: e62c254d0d826da4ab806804a579b878, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2811,7 +2811,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eff054b3604029044b473de73f36edb1, type: 2}
+  - {fileID: 2100000, guid: 6cd0e1a2b662d8a4e84b97d35a4dfe45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3310,11 +3310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba8034f30203b54ba77e404c7a44644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraInRigMode: 0
   collisionMode: 0
   avatarHeadHeight: 0
   avatarArmLength: 0
-  torsoOffset: 0
   head:
     vrTarget: {fileID: 0}
     rigTarget: {fileID: 2542604939183784900}
@@ -3330,12 +3328,21 @@ MonoBehaviour:
     rigTarget: {fileID: 2542604940116988751}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: -90}
+  leftHandCollider: {fileID: 0}
+  rightHandCollider: {fileID: 0}
+  isReplica: 0
   bodyRotation: 1
   rotThreshold: 15
   turnSmoothness: 5
   crouchingThreshold: 0
+  crouchSmoothness: 0
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 0
   handsTorsoRotation: 0
-  isCrouched: 0
+  isLookingDown: 0
+  leftHandTarget: {fileID: 0}
+  rightHandTarget: {fileID: 0}
 --- !u!114 &3425071532526942040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3362,6 +3369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c4eece9c9d75447a3bedaf613669ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 0
   footOffset: {x: 0, y: 0.1, z: 0}
   rightFootPosWeight: 1
   leftFootPosWeight: 1
