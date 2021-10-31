@@ -1474,8 +1474,32 @@ MonoBehaviour:
   - {fileID: 1648608239434522596, guid: b17ed569feb5948cab53e9531625bff8, type: 3}
   - {fileID: 8943228925285787530, guid: 092c7419c82114749b42c53842ac7577, type: 3}
   - {fileID: 7941152251905763815, guid: c44b4038348b34feea15087f3162f75a, type: 3}
-  timeToStart: 0
-  timeToSpawn: 5
+  - {fileID: 714739561714485012, guid: e90485f46871447c8a30fe3b39d87037, type: 3}
+  - {fileID: 8546927599402982768, guid: e6afbc75270614b7296252070813dfcd, type: 3}
+  - {fileID: 8383610003230769894, guid: 425859b4a06174ce3a68d069fc8af0f9, type: 3}
+  - {fileID: 2853002672548627457, guid: 5fee18734ed024804a093eb24c8f4e35, type: 3}
+  - {fileID: 4296016277385851701, guid: 168831800c87645bcbd35343b1a717a2, type: 3}
+  - {fileID: 2185269663944635409, guid: e8e677ba75dfd4b8ea3a6be9b9760303, type: 3}
+  - {fileID: 3846645749899980971, guid: 5a8fd441549504c64a918daab6ffb9cc, type: 3}
+  - {fileID: 8844219647247601925, guid: 1c7548d1f0a0e4332a1b3a8851aef96f, type: 3}
+  - {fileID: 1122381816903249662, guid: 1b99a4b82a12446b5a5cdef5662b9cdd, type: 3}
+  - {fileID: 4232225681719519372, guid: d6f9dd1c7c0ad4f1eb4cb2de6e9bf3c6, type: 3}
+  - {fileID: 9157411859067329797, guid: 8dd3e89df981c44e69eecbd47fdd6741, type: 3}
+  - {fileID: 3667919480874794205, guid: 874123dc7a19545d69e65e71059866b4, type: 3}
+  - {fileID: 7871525538159140650, guid: 14960f1cfa97b4149a452f0464d62b32, type: 3}
+  - {fileID: 7048140148965225346, guid: e1b72db79f8274121afc5762f0baa148, type: 3}
+  - {fileID: 2764615872544531774, guid: 2d1f34a4679604922a22d3b79b2780b0, type: 3}
+  - {fileID: 5520647934008097324, guid: c60a6972c5704442f821d1bfa27e2f78, type: 3}
+  - {fileID: 4988698192619559422, guid: a94f665ad531543498fbd397efc13400, type: 3}
+  - {fileID: 5695448172687656012, guid: b07e20ac9622d40fdbba0813ac1d3f6d, type: 3}
+  - {fileID: 8531263046726822404, guid: 3346334dc17054fbfa129576f0c87c2a, type: 3}
+  - {fileID: 3924012600081339016, guid: 55d0e23a9ee8c4a6b8a8ed2eca20a738, type: 3}
+  - {fileID: 6652513351556276271, guid: c3d18709172324f13a2dd305e26b9b0d, type: 3}
+  - {fileID: 2754466845188915253, guid: 3160d6ca2485848a79ef779d97660558, type: 3}
+  - {fileID: 2966086412754580047, guid: 2458bb3e4d9bd46d594897fd16cadf87, type: 3}
+  - {fileID: 7785493322753163994, guid: fc62ac0d3705c4b8a90e33afd54a714c, type: 3}
+  timeToStart: 60
+  timeToSpawn: 10
 --- !u!4 &369292882
 Transform:
   m_ObjectHideFlags: 0
@@ -1484,7 +1508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369292880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9949192, y: -1.4287937, z: 33.9291}
+  m_LocalPosition: {x: -0.9949192, y: -0.01125515, z: 33.9291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1958,7 +1982,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36218
+  m_Name: pb_Mesh21590
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2980,7 +3004,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 5978529666793867268}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6154,7 +6178,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36252
+  m_Name: pb_Mesh21624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10634,7 +10658,6 @@ GameObject:
   - component: {fileID: 1869296024}
   - component: {fileID: 1869296027}
   - component: {fileID: 1869296028}
-  - component: {fileID: 1869296023}
   m_Layer: 0
   m_Name: CameraTest
   m_TagString: Untagged
@@ -10642,19 +10665,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1869296023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869296022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
 --- !u!20 &1869296024
 Camera:
   m_ObjectHideFlags: 0

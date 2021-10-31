@@ -8,13 +8,14 @@ public class Spawner : MonoBehaviour {
     //public GameObject[] items;
     public float timeToStart;
     public float timeToSpawn;
+
     private float currentTimeToSpawn;
     private int i = 0; // objectsToSpawn index
     private int count = 1; // how many to spawn
     private int stopCount = 50;
 
 
-    void Star()
+    void Start()
     {
         currentTimeToSpawn = timeToSpawn;
         //objectsToSpawn = Resources.LoadAll("Agents/Prefabs") as List<GameObject>();
