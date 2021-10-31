@@ -78,8 +78,6 @@ public class VRRig : MonoBehaviour
         float armOffset = avatarArmLength - playerArmLength;
         leftHand.trackingPositionOffset = new Vector3(0, 0, armOffset);
         rightHand.trackingPositionOffset = new Vector3(0, 0, armOffset);
-        leftHand.vrTarget.localPosition = leftHand.trackingPositionOffset;
-        rightHand.vrTarget.localPosition = rightHand.trackingPositionOffset;
     }
 
     void OnAnimatorIK(int layerIndex)
