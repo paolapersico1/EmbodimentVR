@@ -3200,7 +3200,6 @@ GameObject:
   - component: {fileID: 7060570080448737296}
   - component: {fileID: 7060570080448737297}
   - component: {fileID: 7060570080448737298}
-  - component: {fileID: -3436500473034501773}
   m_Layer: 8
   m_Name: agent22
   m_TagString: Untagged
@@ -3300,21 +3299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d78d05eb033d441f9800349f918f882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3436500473034501773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7871525538159140650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67bd1aa03668947c2a3fd1f53d831efe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ikActive: 0
-  lookObj: {fileID: 0}
-  lookWeight: 2
 --- !u!1 &7880462846157176741
 GameObject:
   m_ObjectHideFlags: 0

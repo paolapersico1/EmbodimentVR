@@ -2297,10 +2297,10 @@ MonoBehaviour:
   - {fileID: 2185269663944635409, guid: e8e677ba75dfd4b8ea3a6be9b9760303, type: 3}
   - {fileID: 3846645749899980971, guid: 5a8fd441549504c64a918daab6ffb9cc, type: 3}
   - {fileID: 8844219647247601925, guid: 1c7548d1f0a0e4332a1b3a8851aef96f, type: 3}
-  - {fileID: 1122381816903249662, guid: 1b99a4b82a12446b5a5cdef5662b9cdd, type: 3}
-  - {fileID: 4232225681719519372, guid: d6f9dd1c7c0ad4f1eb4cb2de6e9bf3c6, type: 3}
+  - {fileID: 746988406841539897, guid: 557b45b0e34c9324d83eac5991a32025, type: 3}
+  - {fileID: 1968538096053191653, guid: 5275ac8b5a785f745b802e69c2279f6e, type: 3}
+  - {fileID: 8717910819900223572, guid: 4099f381c789e354ebfeb4e08170a614, type: 3}
   - {fileID: 9157411859067329797, guid: 8dd3e89df981c44e69eecbd47fdd6741, type: 3}
-  - {fileID: 3667919480874794205, guid: 874123dc7a19545d69e65e71059866b4, type: 3}
   - {fileID: 7871525538159140650, guid: 14960f1cfa97b4149a452f0464d62b32, type: 3}
   - {fileID: 7048140148965225346, guid: e1b72db79f8274121afc5762f0baa148, type: 3}
   - {fileID: 2764615872544531774, guid: 2d1f34a4679604922a22d3b79b2780b0, type: 3}
@@ -2313,8 +2313,12 @@ MonoBehaviour:
   - {fileID: 2754466845188915253, guid: 3160d6ca2485848a79ef779d97660558, type: 3}
   - {fileID: 2966086412754580047, guid: 2458bb3e4d9bd46d594897fd16cadf87, type: 3}
   - {fileID: 7785493322753163994, guid: fc62ac0d3705c4b8a90e33afd54a714c, type: 3}
-  timeToStart: 0
-  timeToSpawn: 5
+  - {fileID: 1122381816903249662, guid: 1b99a4b82a12446b5a5cdef5662b9cdd, type: 3}
+  - {fileID: 4232225681719519372, guid: d6f9dd1c7c0ad4f1eb4cb2de6e9bf3c6, type: 3}
+  - {fileID: 3667919480874794205, guid: 874123dc7a19545d69e65e71059866b4, type: 3}
+  timeToStart: 60
+  timeToSpawn: 15
+  stopCount: 36
 --- !u!4 &369292882
 Transform:
   m_ObjectHideFlags: 0
@@ -3907,7 +3911,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 5978529666793867268}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
