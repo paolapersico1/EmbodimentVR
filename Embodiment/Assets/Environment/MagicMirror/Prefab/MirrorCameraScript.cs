@@ -7,6 +7,7 @@ public class MirrorCameraScript : MonoBehaviour
 {
     public GameObject MirrorObject;
 	public bool XRMode;
+    public int fieldOfView;
 
     private Renderer mirrorRenderer;
     private Material mirrorMaterial;
@@ -22,6 +23,7 @@ public class MirrorCameraScript : MonoBehaviour
     {
         mirrorScript = GetComponentInParent<MirrorScript>();
         cameraObject = GetComponent<Camera>();
+        cameraObject.fieldOfView = fieldOfView;
         //cameraObject.enabled = true;
 
         if (mirrorScript.AddFlareLayer)
