@@ -341,11 +341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8160988009243138251, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_Radius
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8160988009243138251, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_BaseOffset
-      value: -0.02
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160988009243138251, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8274096889482995620, guid: f05b242791d79734d83fce9527b91d7c, type: 3}
       propertyPath: m_Layer

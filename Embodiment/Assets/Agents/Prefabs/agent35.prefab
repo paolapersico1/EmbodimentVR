@@ -2101,7 +2101,7 @@ Transform:
   m_GameObject: {fileID: 4232225681719519372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.93}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1.11, y: 1.11, z: 1.11}
   m_Children:
   - {fileID: 4519594060443119987}
   - {fileID: 976434210249983637}
@@ -2143,7 +2143,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4232225681719519372}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Speed: 1.5
   m_Acceleration: 6
   avoidancePriority: 50
@@ -2153,8 +2153,8 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: -0.02
-  m_WalkableMask: 4294967295
+  m_BaseOffset: -0.01
+  m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
 --- !u!114 &3925602875801866365
 MonoBehaviour:
@@ -3316,7 +3316,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f7c6a40fa92fcac448d984c6eb0ebde4, type: 2}
+  - {fileID: 2100000, guid: 8ef03e3a195335442b68c090985f6a01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

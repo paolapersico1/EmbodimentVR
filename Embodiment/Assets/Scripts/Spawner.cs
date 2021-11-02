@@ -81,8 +81,8 @@ public class Spawner : MonoBehaviour {
 
     void SpawnObject(int i)
     {
-        Debug.Log(transform.position);
-            Instantiate(objectsToSpawn[i], transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(objectsToSpawn[i], transform.position, Quaternion.identity) as GameObject;
+        obj.SendMessage("SetTimeOffset", currentTimeToSpawn);
 
     }
 }

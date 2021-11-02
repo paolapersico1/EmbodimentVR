@@ -209,11 +209,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3827113405703577580, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
       propertyPath: m_Radius
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3827113405703577580, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
       propertyPath: m_BaseOffset
-      value: -0.02
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827113405703577580, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3931215102708356315, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
       propertyPath: m_Layer
@@ -399,6 +403,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8194510030656029449, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0dac03d3b34ae7041803bfdef515f846, type: 2}
     - target: {fileID: 8246419528989067616, guid: e569ead3651bc2547b1662d292d9165b, type: 3}
       propertyPath: m_Layer
       value: 8

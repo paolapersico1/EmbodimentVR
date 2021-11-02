@@ -24,7 +24,6 @@ public class AIController : MonoBehaviour
     private bool alive = true;
 
 
-
     // Start is called before the first frame update
     void Start()
     {   
@@ -71,7 +70,13 @@ public class AIController : MonoBehaviour
         timeToReturn = Random.Range(timeToReturn, timeToReturn + 50);
     }
 
-
+    void SetTimeOffset(float offset)
+    {
+        timeToLook += offset;
+        timeToTalk += offset;
+        timeToRaid += offset;
+        timeToReturn += offset;
+    }
 
     void Update()
     {
@@ -100,7 +105,8 @@ public class AIController : MonoBehaviour
             else if (phase != 3)
             {
                 phase = 2;
-                agent.SetDestination(wp2[0].transform.position);
+
+                agent.SetDestination(wp2[0].transform.position + new Vector3(Random.Range(-1,1),0,0));
                 if(agent.remainingDistance < 1 || ((agent.velocity.magnitude/agent.speed) < 0.2 && agent.remainingDistance < 3)) {
                     animator.SetBool("isIdle", true);
                     animator.SetBool("isWalking", false);
@@ -124,7 +130,7 @@ public class AIController : MonoBehaviour
             }
             else {
                 phase = 3;
-                agent.SetDestination(wp3[Random.Range(0, wp3.Length)].transform.position);
+                agent.SetDestination(wp3[0].transform.position);
                 animator.SetBool("isIdle", false);
                 animator.SetBool("isWalking", true);
                 agent.isStopped = false;

@@ -95,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2365453961753975241, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f7c6a40fa92fcac448d984c6eb0ebde4, type: 2}
     - target: {fileID: 2597050742737367570, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -197,15 +201,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698982858043538742, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.1
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 4698982858043538742, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.1
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 4698982858043538742, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 4698982858043538742, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -261,11 +265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5097122043248549756, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_Radius
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5097122043248549756, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: m_BaseOffset
-      value: -0.02
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097122043248549756, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5097122043248549757, guid: 22020fa105726814b8e4a4cf713b78a3, type: 3}
       propertyPath: ikActive
