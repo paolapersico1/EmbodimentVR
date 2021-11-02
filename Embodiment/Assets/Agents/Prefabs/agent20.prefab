@@ -31,7 +31,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.07
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1684743727757693218
@@ -259,7 +259,7 @@ PrefabInstance:
     - target: {fileID: -2886304265017757051, guid: b65ec503b4cddfd4581ba5c4194fac18, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: 1fff79f6c92d031419d45601fa9289d4, type: 2}
     - target: {fileID: -2479617220082202536, guid: b65ec503b4cddfd4581ba5c4194fac18, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -455,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 6939169157381972349, guid: b65ec503b4cddfd4581ba5c4194fac18, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: cea1b1d62bc3d664dab9d12dc60c104b, type: 2}
     - target: {fileID: 6962910205723549692, guid: b65ec503b4cddfd4581ba5c4194fac18, type: 3}
       propertyPath: m_Layer
       value: 8
