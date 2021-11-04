@@ -82,7 +82,7 @@ public class Spawner : MonoBehaviour {
     void SpawnObject(int i)
     {
         GameObject obj = Instantiate(objectsToSpawn[i], transform.position, Quaternion.identity) as GameObject;
-        obj.SendMessage("SetTimeOffset", currentTimeToSpawn);
+        //obj.SendMessage("SetTimeOffset", currentTimeToSpawn);
 
     }
 }

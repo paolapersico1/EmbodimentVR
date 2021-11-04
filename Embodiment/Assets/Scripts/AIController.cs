@@ -22,6 +22,7 @@ public class AIController : MonoBehaviour
     private float timeToRaid = 45;
     private float timeToReturn = 120;
     private bool alive = true;
+    private bool destToSet = true;
 
 
     // Start is called before the first frame update
@@ -52,8 +53,8 @@ public class AIController : MonoBehaviour
 
         // Head Controller
         timeToLook = Random.Range(timeToLook, timeToLook + 30);
-        this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
-        //this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
+        //this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
+        this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
         this.GetComponent<HeadController>().enabled = false;
         this.GetComponent<HeadController>().ikActive = true;
         Debug.Log("enabled: " + this.GetComponent<HeadController>().enabled);
@@ -70,13 +71,13 @@ public class AIController : MonoBehaviour
         timeToReturn = Random.Range(timeToReturn, timeToReturn + 50);
     }
 
-    void SetTimeOffset(float offset)
-    {
-        timeToLook += offset;
-        timeToTalk += offset;
-        timeToRaid += offset;
-        timeToReturn += offset;
-    }
+   // void SetTimeOffset(float offset)
+   // {
+   //     timeToLook += offset;
+   //     timeToTalk += offset;
+   //     timeToRaid += offset;
+   //     timeToReturn += offset;
+   // }
 
     void Update()
     {
@@ -106,8 +107,12 @@ public class AIController : MonoBehaviour
             {
                 phase = 2;
 
-                agent.SetDestination(wp2[0].transform.position + new Vector3(Random.Range(-1,1),0,0));
-                if(agent.remainingDistance < 1 || ((agent.velocity.magnitude/agent.speed) < 0.2 && agent.remainingDistance < 3)) {
+                // agent.SetDestination(wp2[Random.Range(0, wp2.Length)].transform.position);
+                if (destToSet) {
+                    agent.SetDestination(wp2[Random.Range(0, wp2.Length)].transform.position);
+                    destToSet = false;
+                }
+                if(agent.remainingDistance < 1) { // || ((agent.velocity.magnitude/agent.speed) < 0.2 && (agent.remainingDistance < 2))) {
                     animator.SetBool("isIdle", true);
                     animator.SetBool("isWalking", false);
                     agent.isStopped = true;
@@ -134,11 +139,11 @@ public class AIController : MonoBehaviour
                 animator.SetBool("isIdle", false);
                 animator.SetBool("isWalking", true);
                 agent.isStopped = false;
-                if (agent.remainingDistance < 1) {
-                    Destroy(agent);
-                    //Destroy(agentObj);
-                    alive = false; // the agent is dead here
-                }
+               // if (agent.remainingDistance < 1) {
+               //     Destroy(agent);
+               //     //Destroy(agentObj);
+               //     alive = false; // the agent is dead here
+               // }
             }
         }
     }
