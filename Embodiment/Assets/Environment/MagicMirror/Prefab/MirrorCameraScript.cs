@@ -7,7 +7,11 @@ public class MirrorCameraScript : MonoBehaviour
 {
     public GameObject MirrorObject;
 	public bool XRMode;
-    public int fieldOfView;
+
+    public bool zoomMode;
+    public int startFOV;
+    public int endFOV;
+    public float FOVSmoothing;
 
     private Renderer mirrorRenderer;
     private Material mirrorMaterial;
@@ -23,7 +27,7 @@ public class MirrorCameraScript : MonoBehaviour
     {
         mirrorScript = GetComponentInParent<MirrorScript>();
         cameraObject = GetComponent<Camera>();
-        cameraObject.fieldOfView = fieldOfView;
+        cameraObject.fieldOfView = startFOV;
         //cameraObject.enabled = true;
 
         if (mirrorScript.AddFlareLayer)
@@ -75,7 +79,13 @@ public class MirrorCameraScript : MonoBehaviour
 
     private void Update()
     {
-		if (XRMode && Camera.current == Camera.main) {
+        if (zoomMode)
+        {
+            cameraObject.fieldOfView = Mathf.Lerp(cameraObject.fieldOfView, endFOV, 
+                                                    Mathf.SmoothStep(0.01f, 1.0f, FOVSmoothing) * Time.deltaTime);
+        }
+   
+        if (XRMode && Camera.current == Camera.main) {
 			return;
 		}
         CreateRenderTexture();
@@ -208,7 +218,7 @@ public class MirrorCameraScript : MonoBehaviour
     {
         if (reflectionTexture)
         {
-            DestroyImmediate(reflectionTexture);
+            Destroy(reflectionTexture);
             reflectionTexture = null;
         }
     }
