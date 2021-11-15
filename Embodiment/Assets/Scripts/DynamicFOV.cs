@@ -5,13 +5,14 @@ using UnityEngine;
 public class DynamicFOV : MonoBehaviour 
 {
     
-    public float maxCamFOV = 100f;
-    public float minCamFOV = 60f;
-    public float fovSpeed = 0.2f;
-    public float timeToZoomOut = 60f;
+    public float maxCamFOV = 600f;
+    public float minCamFOV = 45f;
+    public float fovSpeed = 0.05f;
+    public float fovAcceleration = 0.99f;
+    public float timeToZoomOut = 40f;
 
-    public Transform target;
-    public Camera myCam;
+    private Transform target;
+    private Camera myCam;
 
     // float initialFOV;
 
@@ -32,6 +33,10 @@ public class DynamicFOV : MonoBehaviour
             }
             else {
                 myCam.fieldOfView += fovSpeed;
+                if (fovSpeed > 0.001)
+                {
+                    fovSpeed *= fovAcceleration;
+                }
             }
         }
     }
