@@ -17,10 +17,10 @@ public class AIController : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
     int phase = 1; // range 1,4
-    private float timeToLook = 1;
-    private float timeToTalk = 30;
-    private float timeToRaid = 45;
-    private float timeToReturn = 120;
+    private float timeToLook = 30;
+    private float timeToTalk = 45;
+    private float timeToRaid = 60;
+    private float timeToReturn = 180;
     private bool alive = true;
     private bool destToSet = true;
     private bool isFemale = false;
@@ -54,8 +54,8 @@ public class AIController : MonoBehaviour
 
         // Head Controller
         timeToLook = Random.Range(timeToLook, timeToLook + 30);
-        this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
-        //this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
+        //this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
+        this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
         this.GetComponent<HeadController>().enabled = false;
         this.GetComponent<HeadController>().ikActive = true;
         Debug.Log("enabled: " + this.GetComponent<HeadController>().enabled);
@@ -63,7 +63,7 @@ public class AIController : MonoBehaviour
 
         // Talking (no at the beginning)
         animator.SetBool("isTalking", false);
-        timeToTalk = Random.Range(timeToTalk, timeToTalk + 50);
+        timeToTalk = Random.Range(timeToTalk, timeToTalk + 30);
 
         // WP2 timer
         timeToRaid = Random.Range(timeToRaid, timeToRaid + 40);
@@ -121,7 +121,7 @@ public class AIController : MonoBehaviour
                         agent.SetDestination(wp2[Random.Range(0, wp2.Length)].transform.position);
                         destToSet = false;
                     }
-                    if(agent.remainingDistance < 1) { // || ((agent.velocity.magnitude/agent.speed) < 0.2 && (agent.remainingDistance < 2))) {
+                    if((agent.remainingDistance < 1) || ((agent.velocity.magnitude/agent.speed) < 0.2 && (agent.remainingDistance < 2))) {
                         animator.SetBool("isIdle", true);
                         animator.SetBool("isWalking", false);
                         agent.isStopped = true;
@@ -136,23 +136,22 @@ public class AIController : MonoBehaviour
                 else {
                     animator.SetBool("isTalking", true);
                 }
-
-                // Phase3: wp2 to wp3
-                if(timeToReturn > 0)
-                {
-                    timeToReturn -= Time.deltaTime;
-                }
-                else {
-                    phase = 3;
-                    agent.SetDestination(wp3[0].transform.position);
-                    animator.SetBool("isIdle", false);
-                    animator.SetBool("isWalking", true);
-                    agent.isStopped = false;
-                   // if (agent.remainingDistance < 1) {
-                   //     Destroy(gameObject);
-                   //     alive = false; // the agent is dead here
-                   // }
-                }
+            }
+            // Phase3: wp2 to wp3
+            if(timeToReturn > 0)
+            {
+                timeToReturn -= Time.deltaTime;
+            }
+            else {
+                phase = 3;
+                agent.SetDestination(wp3[0].transform.position);
+                animator.SetBool("isIdle", false);
+                animator.SetBool("isWalking", true);
+                agent.isStopped = false;
+               // if (agent.remainingDistance < 1) {
+               //     Destroy(gameObject);
+               //     alive = false; // the agent is dead here
+               // }
             }
         }
     }   
