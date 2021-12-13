@@ -57,8 +57,8 @@ public class AIController : MonoBehaviour
 
         // Head Controller
         timeToLook = Random.Range(timeToLook, timeToLook + 30);
-        //this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
-        this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
+        this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
+        //this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
         this.GetComponent<HeadController>().enabled = false;
         this.GetComponent<HeadController>().ikActive = true;
         Debug.Log("enabled: " + this.GetComponent<HeadController>().enabled);
