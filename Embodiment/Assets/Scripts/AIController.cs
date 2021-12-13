@@ -34,6 +34,9 @@ public class AIController : MonoBehaviour
         // Destroy(GetComponent<NavMeshObstacle>());
         // this.GetComponent<NavMeshObstacle>().enabled = false;
         // Debug.Log("Obstacle active: " + this.GetComponent<NavMeshObstacle>().enabled);
+        
+        // add gameobject tag
+        gameObject.tag = "agent";
 
         // Position controller
         wp1 = GameObject.FindGameObjectsWithTag("wp1");
@@ -54,8 +57,8 @@ public class AIController : MonoBehaviour
 
         // Head Controller
         timeToLook = Random.Range(timeToLook, timeToLook + 30);
-        this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
-        //this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
+        //this.GetComponent<HeadController>().lookObj = GameObject.Find("XR Rig/Player Offset/Camera Offset/Main Camera/Camera").transform;
+        this.GetComponent<HeadController>().lookObj = GameObject.Find("CameraTest").transform;
         this.GetComponent<HeadController>().enabled = false;
         this.GetComponent<HeadController>().ikActive = true;
         Debug.Log("enabled: " + this.GetComponent<HeadController>().enabled);
@@ -148,10 +151,10 @@ public class AIController : MonoBehaviour
                 animator.SetBool("isIdle", false);
                 animator.SetBool("isWalking", true);
                 agent.isStopped = false;
-               // if (agent.remainingDistance < 1) {
-               //     Destroy(gameObject);
-               //     alive = false; // the agent is dead here
-               // }
+                if (agent.remainingDistance < 1) {
+                    Destroy(gameObject);
+                    alive = false; // the agent is dead here
+                }
             }
         }
     }   

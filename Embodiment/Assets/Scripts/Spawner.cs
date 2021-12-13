@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour {
     
     public List<GameObject> objectsToSpawn = new List<GameObject>();
     //public GameObject[] items;
-    public float timeToStart;
+    private float timeToStart = 0; // if changed change also ApplicationManager.timeToCheck
     public float timeToSpawn;
     public int stopCount;
 

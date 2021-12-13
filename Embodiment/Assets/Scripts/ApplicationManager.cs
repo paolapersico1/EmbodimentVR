@@ -6,6 +6,8 @@ using UnityEngine.XR;
 
 public class ApplicationManager : MonoBehaviour
 {
+    private float timeToCheck = 30; // must be higher than timeToSpawn
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,6 @@ public class ApplicationManager : MonoBehaviour
         {
             Debug.Log("Headset plugged: " + XRSettings.loadedDeviceName);
         }
-        
     }
 
     // Update is called once per frame
@@ -36,5 +37,17 @@ public class ApplicationManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
             //restart scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+    
+        // restart when finished
+        if(timeToCheck > 0)
+        {
+            timeToCheck -= Time.deltaTime;
+        }
+        else {
+            GameObject[] allObjects = GameObject.FindGameObjectsWithTag("agent");
+            if (allObjects.Length == 0){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+            }
+        }
     }
 }
